@@ -1,0 +1,158 @@
+@import "../bourbon/bourbon"
+
+$color: #fd6246 //Theme skin
+$textColor: #cbcbcb
+$mainColor: #313131
+$bgLight: #f8f8f8
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	color: $mainColor
+
+a
+	color: $color
+
+.mainColorBg
+	background-color: $mainColor
+.colorBg
+	background-color: $color
+
+
+.menuContainer
+	a:hover
+		color: $textColor
+		
+	a
+		+kerning(8)
+
+/* Header */
+.headText
+	h1
+		+kerning(5)
+	p
+		a
+			+kerning(3)
+
+/* Menu button */
+.toggleMenu
+	background-color: $color
+
+/* Section */
+section
+	.headSection
+		h2
+			+kerning(3)
+			font-size: 30px
+		div
+			+kerning(8)
+			font-size: 12px
+			+animation-delay(.5s)
+
+/* Section About */	
+.sAbout
+	background-color: $mainColor
+	border-top: 5px solid #212121
+	.headSection
+		h2
+			color: $textColor
+		div
+			color: $textColor
+.sAboutBlock .lineAbout
+	background-color: $color
+
+.sAboutBlock
+	p
+		color: $mainColor
+
+/* Section Gallery */	
+.sGallery
+	background-color: $bgLight
+	border-top: 5px solid #909090
+.sGalleryBlock .lineGallery
+	background-color: $color
+.sGalleryBlock
+	.wrapHoverBlock
+		a
+			+transition(all 0.3s ease)
+			&:hover
+				color: $color
+				border: 1px solid $color
+				background-color: rgba(0,0,0,.3)
+	
+/* Section Best photos */	
+.sPhotoB
+	background-color: #fff
+	border-top: 5px solid #d0d0d0
+	.headSection
+		h2
+			color: $color
+		div
+			color: $color
+.wrapPhoto
+	a:hover
+		color: $color
+		border: 1px solid $color
+		background-color: rgba(0,0,0,.3)
+
+/* Popup Best photo */
+.photoBestDesc
+	color: $mainColor
+
+/* Section Advice */
+.sAdvice
+	background-color: $mainColor
+	border-top: 5px solid #909090
+	.headSection
+		h2
+			color: $textColor
+		div
+			color: $textColor
+.sAdviceBlock .lineAdvice
+	background-color: $color
+.sAdviceBlock
+	.wrapAdviceBlock
+		a
+			color: $color
+			+kerning(3)
+
+/* Section Contacts */
+.sContacts
+	background-color: #fff
+	border-top: 5px solid #909090
+	.headSection
+		h2
+			color: #717171
+		div
+			color: #717171
+.sContactsBlock
+	&:last-child .lineContacts
+		background-color: $color
+
+.contactContainer
+	.contactIcon
+		color: $color
+	h3
+		color: $color
+	p
+		color: $mainColor
+
+.form-group
+	input:focus,
+	textarea:focus
+		color: $color
+		border: 1px solid $color
+	span
+		color: $color
+	.help-block
+		color: $color
+		+kerning(4)
+.contactForm
+	input[type=button]
+		background-color: $color
+		color: #fff
+		+kerning(3)
+		+transition(all .5s ease)
+		&:hover
+			background-color: #e85136

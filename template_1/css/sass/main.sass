@@ -1,0 +1,476 @@
+@import "bourbon/bourbon"
+
+body
+	font-family: "Raleway", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialised
+	margin: 0
+	padding: 0
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+/* Section */
+section,
+.mainHead,
+sectionHead
+	position: relative
+
+section
+	padding: 50px 0
+	.headSection
+		display: block
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 80px
+	h2
+		padding: 0
+		margin: 0 0 20px
+		text-align: center
+		font-size: 30px
+		text-transform: uppercase
+	
+
+/* Animation at loading site */	
+.loader
+	background: none no-repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+.logoContainer
+	float: left
+
+svg
+	height: 80px
+	width: 80px
+	z-index: 99
+	position: relative
+	path
+		fill: #fff
+		opacity: 0.6
+		
+/* Menu button */	
+.toggleMenu
+	width: 60px
+	height: 60px
+	top: 20px
+	right: 50px
+	position: fixed
+	z-index: 200
+	/*background-color: #000*/
+	border: none
+	span
+		display: block
+
+$w: 32px
+$h: 2px
+
+.sandwich 
+	width: $w
+	height: $w
+	position: absolute
+	top: 12px
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+/* Animation (is not active / active) */
+.sw-topper
+	position: relative
+	top: 0
+	width: $w
+	height: $h
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	/*transition-delay: 0.2s, 0s*/
+.sw-bottom
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 4
+
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s
+
+.sw-footer
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 8
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: all 0.5s
+	transition-delay: 0.1s 
+
+.sandwich.active
+	.sw-topper
+		top: 10px
+		transform: rotate(135deg)
+	.sw-bottom
+		top: 8px
+		transform: rotate(-135deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+
+/* Site menu */
+.menuContainer
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,.9)
+	z-index: 150
+	left: 0
+	top: 0
+	display: none
+	ul,
+	li
+		list-style-type: none
+		padding: 0
+		margin: 0
+	ul
+		margin-top: 170px
+		text-align: center
+		li
+			&:nth-child(1) a
+				+animation-delay(.5s)
+			&:nth-child(2) a
+				+animation-delay(.7s)
+			&:nth-child(3) a
+				+animation-delay(.9s)
+			&:nth-child(4) a
+				+animation-delay(1.1s)
+			&:nth-child(5) a
+				+animation-delay(1.3s)
+			
+	
+		a
+			display: block
+			font-size: 14px
+			text-transform: uppercase
+			height: 60px
+			position: relative
+			span
+				display: block
+				position: relative
+				height: 100%
+				top: -40px
+				left: 0
+				+transition(all 0.5s ease)
+				&:hover
+					background-color: rgba(255,255,255,.05)
+
+/* Header */
+.mainHead,
+.sectionHead
+	min-height: 620px
+	padding-top: 20px
+.headWrapper,
+.sectionWrapper
+	width: 100%
+	height: 100%
+	display: block
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 99
+	.headTable,
+	.sectionTable
+		width: 100%
+		height: 100%
+		display: table
+		.headRow,
+		.sectionRow
+			display: table-row
+			.headCell,
+			.sectionCell
+				display: table-cell
+				text-align: center
+				vertical-align: middle
+	.headText,
+	.sectionText
+		display: inline-block
+		p
+			padding: 0
+			margin: 0
+			+animation-delay(1.7s)
+			a
+				font-family: "Raleway", sans-serif
+				font-size: 1.5em
+				font-weight: 300
+				text-transform: lowercase
+				color: rgba(255,255,255,.7)
+				padding: 12px 30px
+				border: 1px solid rgba(255,255,255,.7)
+				+transition(background-color 0.6s ease-in-out)
+				&:hover
+					background-color: rgba(255,255,255,0.15)
+				
+					
+		h1
+			display: inline-block
+			font-family: "PoiretOne", sans-serif
+			font-size: 3.5em
+			font-weight: normal
+			color: rgba(255,255,255,.8)
+			+animation-delay(1s)
+	/*.sectionText
+		h1
+			font-size: 4em
+			+animation-delay(.8s)*/
+	.hOpacity
+		opacity: 0.5
+		+transition(all 0.5s ease)
+	
+/* Section About */		
+.sAboutBlock
+	background-color: #fff
+	padding: 0
+	img
+		width: 100%
+		height: auto
+	.lineAbout
+		width: 100%
+		height: 15px
+	p
+		padding: 15px 20px 30px 20px
+		margin: 0
+		font-family: "Raleway", sans-serif
+		font-weight: normal
+		font-size: 16px
+		/*border-bottom: 10px solid #313131*/
+
+/* Section Gallery */	
+.sGalleryBlock
+	padding-top: 20px
+	/*&:nth-child(1) .wrapGalleryBlock
+		+animation-delay(5s)*/
+	.wrapGalleryBlock
+		width: 100%
+		height: 100%
+		background-color: #fff
+		position: relative
+		+transition(transform .5s ease)
+		overflow: hidden
+		opacity: 0
+		&:hover
+			transform: scale(1.1)
+		img
+			width: 100%
+			height: auto
+		.lineGallery
+			width: 100%
+			height: 15px
+	
+	.wrapHoverBlock
+		width: 100%
+		height: 100%
+		padding: 0 10px
+		position: absolute
+		background-color: rgba(0,0,0,.8)
+		display: inline-block
+		text-align: center
+		opacity: 1
+		top: 0
+		left: 0
+		z-index: 101
+		+transition(all 0.5s ease)
+		&:hover
+			opacity: 1
+		h3
+			color: #fff
+			font-family: "Raleway", sans-serif
+			font-weight: 600
+			font-size: 14px
+			margin: 20px 0px 0px
+			text-transform: uppercase
+		a
+			position: absolute
+			top: 50% 
+			left: 50%
+			width: 120px
+			height: 30px
+			margin-top: -15px
+			margin-left: -60px
+			/*padding: 6px 30px*/
+			color: #fff
+			border: 1px solid #fff
+			font-family: "Raleway", sans-serif
+			font-weight: normal
+			font-size: 16px
+
+/* Section Best photo */	
+.itemPhoto
+	padding: 0
+	position: relative
+	img
+		width: 100%
+	.wrapPhoto
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		position: absolute
+		z-index: 101
+		background-color: rgba(0,0,0,.7)
+		opacity: 0
+		text-align: center
+		+transition(all 0.5s ease)
+		&:hover
+			opacity: 1
+			
+		a
+			width: 120px
+			height: 30px
+			line-height: 30px
+			text-align: center
+			border: 1px solid #fff
+			position: absolute
+			display: block
+			font-family: "Raleway", sans-serif
+			font-weight: normal
+			font-size: 16px
+			color: #fff
+			top: 50%
+			left: 50%
+			margin-top: -15px
+			margin-left: -50px
+			+transition(all 0.5s ease)
+/* Popup Best photo */
+.photoBestDesc
+	background-color: #fff
+	max-width: 500px
+	margin: auto
+	position: relative
+	img
+		width: 100%
+		height: auto
+	h3
+		margin: 0
+		padding: 10px 10px
+		text-align: center
+		font-family: "Raleway", sans-serif
+		font-weight: 600
+		font-size: 16px
+		text-transform: uppercase
+
+/* Section Advice */		
+.sAdviceBlock
+	.lineAdvice
+		width: 100%
+		height: 15px
+	.wrapAdviceBlock
+		width: 100%
+		height: 100%
+		background-color: #fff
+		position: relative
+		padding: 10px 20px 40px 20px
+		margin-bottom: 20px
+		p
+			margin: 0
+			font-family: "Raleway", sans-serif
+			font-weight: normal
+			font-size: 16px
+		a
+			display: inline-block
+			position: absolute
+			font-family:  "Raleway", sans-serif
+			font-weight: 600
+			font-size: 16px
+			text-transform: uppercase
+			right: 20px
+			bottom: 10px
+
+/* Section Contacts */
+.sContactsBlock
+	.lineContacts
+		width: 100%
+		height: 15px
+	.wrapContactsBlock
+		width: 100%
+		height: 100%
+		background-color: #fff
+		position: relative
+		padding: 20px 20px 10px 20px
+		p
+			margin: 0
+
+.contactContainer
+	margin-bottom: 20px
+	.contactIcon
+		font-size: 26px
+		display: inline-block
+	h3
+		margin: 0 10px
+		display: inline-block
+		font-size: 20px
+		font-family:  "Raleway", sans-serif
+		font-weight: 600
+	p
+		font-size: 14px
+		font-family:  "Raleway", sans-serif
+		font-weight: normal
+
+.form-group
+	display: block
+	font-size: 16px
+	margin-bottom: 15px
+	input,
+	textarea
+		display: block
+		width: 100%
+		border: 1px solid #ccc
+		line-height: 40px
+		text-indent: 20px
+		color: #4b4b4b
+.contactForm
+	input[type=button]
+		font-size: 14px
+		font-family:  "Raleway", sans-serif
+		font-weight: 600
+		line-height: 40px
+		padding: 0 50px
+		text-transform: uppercase
+		border: 0
+		float: right
+	.form-group
+		span
+			display: inline-block
+			font-size: 12px

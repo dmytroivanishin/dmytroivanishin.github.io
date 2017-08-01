@@ -1,0 +1,144 @@
+body {
+  color: #313131; }
+
+a {
+  color: #a2c418; }
+
+.mainColorBg {
+  background-color: #313131; }
+
+.colorBg {
+  background-color: #a2c418; }
+
+.menuContainer a:hover {
+  color: #cbcbcb; }
+.menuContainer a {
+  letter-spacing: 8px; }
+
+/* Header */
+.headText h1 {
+  letter-spacing: 5px; }
+.headText p a {
+  letter-spacing: 3px; }
+
+/* Menu button */
+.toggleMenu {
+  background-color: #a2c418; }
+
+/* Section */
+section .headSection h2 {
+  letter-spacing: 3px;
+  font-size: 30px; }
+section .headSection div {
+  letter-spacing: 8px;
+  font-size: 12px;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s; }
+
+/* Section About */
+.sAbout {
+  background-color: #313131;
+  border-top: 5px solid #212121; }
+  .sAbout .headSection h2 {
+    color: #cbcbcb; }
+  .sAbout .headSection div {
+    color: #cbcbcb; }
+
+.sAboutBlock .lineAbout {
+  background-color: #a2c418; }
+
+.sAboutBlock p {
+  color: #313131; }
+
+/* Section Gallery */
+.sGallery {
+  background-color: #f8f8f8;
+  border-top: 5px solid #909090; }
+
+.sGalleryBlock .lineGallery {
+  background-color: #a2c418; }
+
+.sGalleryBlock .wrapHoverBlock a {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .sGalleryBlock .wrapHoverBlock a:hover {
+    color: #a2c418;
+    border: 1px solid #a2c418;
+    background-color: rgba(0, 0, 0, 0.3); }
+
+/* Section Best photos */
+.sPhotoB {
+  background-color: #fff;
+  border-top: 5px solid #d0d0d0; }
+  .sPhotoB .headSection h2 {
+    color: #a2c418; }
+  .sPhotoB .headSection div {
+    color: #a2c418; }
+
+.wrapPhoto a:hover {
+  color: #a2c418;
+  border: 1px solid #a2c418;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+/* Popup Best photo */
+.photoBestDesc {
+  color: #313131; }
+
+/* Section Advice */
+.sAdvice {
+  background-color: #313131;
+  border-top: 5px solid #909090; }
+  .sAdvice .headSection h2 {
+    color: #cbcbcb; }
+  .sAdvice .headSection div {
+    color: #cbcbcb; }
+
+.sAdviceBlock .lineAdvice {
+  background-color: #a2c418; }
+
+.sAdviceBlock .wrapAdviceBlock a {
+  color: #a2c418;
+  letter-spacing: 3px; }
+
+/* Section Contacts */
+.sContacts {
+  background-color: #fff;
+  border-top: 5px solid #909090; }
+  .sContacts .headSection h2 {
+    color: #717171; }
+  .sContacts .headSection div {
+    color: #717171; }
+
+.sContactsBlock:last-child .lineContacts {
+  background-color: #a2c418; }
+
+.contactContainer .contactIcon {
+  color: #a2c418; }
+.contactContainer h3 {
+  color: #a2c418; }
+.contactContainer p {
+  color: #313131; }
+
+.form-group input:focus,
+.form-group textarea:focus {
+  color: #a2c418;
+  border: 1px solid #a2c418; }
+.form-group span {
+  color: #a2c418; }
+.form-group .help-block {
+  color: #a2c418;
+  letter-spacing: 4px; }
+
+.contactForm input[type=button] {
+  background-color: #a2c418;
+  color: #fff;
+  letter-spacing: 3px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .contactForm input[type=button]:hover {
+    background-color: #e85136; }
+
+/*# sourceMappingURL=green.css.map */

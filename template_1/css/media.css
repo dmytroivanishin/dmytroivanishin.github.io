@@ -1,0 +1,105 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	/*.wrapGalleryBlock .wrapHoverBlock > h3{
+		font-size: 14px;
+		margin: 30px 0px 15%;
+	}*/
+	/*.wrapGalleryBlock .wrapHoverBlock > a{
+		padding: 6px 30px;
+		font-size: 16px;
+	}*/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+		.wrapGalleryBlock .wrapHoverBlock > h3{
+		/*	font-size: 16px;
+			margin: 30px 0px 15%;
+		}*/
+		/*.wrapGalleryBlock .wrapHoverBlock > a{
+			padding: 10px 20px;
+			font-size: 20px;
+		}*/
+	}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	/* Change the size of text in the header */
+	.headWrapper .headText h1{
+		font-size: 2.5em;
+	}
+	.headWrapper .headText p a{
+		font-size: 1em;
+		font-weight: 600;
+		padding: 8px 20px;
+	}
+	/*.wrapGalleryBlock .wrapHoverBlock > h3{
+		font-size: 16px;
+		margin: 15px 0px 15%;
+	}*/
+	/*.wrapGalleryBlock .wrapHoverBlock > a{
+		padding: 2% 5%;
+		font-size: 16px;
+	}*/
+	.sectionWrapper .sectionText h1{
+		font-size: 3em;
+	}
+		
+			
+
+}
+@media only screen and (max-width : 430px) {
+	.wrapGalleryBlock .wrapHoverBlock > h3{
+		font-size: 12px;
+		/*margin: 15px 0px 8%;*/
+	}
+	.wrapGalleryBlock .wrapHoverBlock > a{
+		margin-top: 10px;
+		font-size: 14px;
+		line-height: 30px;
+	}
+}
+@media only screen and (max-width : 360px) {
+	.sectionWrapper .sectionText h1{
+		font-size: 2.5em;
+	}
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
