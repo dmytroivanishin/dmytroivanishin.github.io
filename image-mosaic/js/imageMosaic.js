@@ -16,17 +16,7 @@
 				ml = parseInt(ml);
 
 			image.each(function(i){
-				tmp[i] = image.eq(i).width();
-				/*if(countImage <= setting.cell){ // Если картинок меньше или равно 3, то 
-					imageArr[indexArr][imageArr[indexArr].length] = image.eq(i).width(); // Заносим в двумерный массив ширину кажой картинки
-					countImage += 1; // Прибавляем индекс
-				} else {
-					countImage = 2;
-					indexArr += 1;						// Прибавляем индекс первого массива
-					imageArr[indexArr] = new Array();	// Создаем новый массив в новом идексе
-					imageArr[indexArr][imageArr[indexArr].length] = image.eq(i).width();	// Зановсим ширину картинки
-				}*/
-				
+				tmp[i] = image.eq(i).width();				
 			}); // end each
 
 		function uni(){	
@@ -81,8 +71,8 @@
 					rowSum = 0;			// Сбрасываем сумму строки
 				}
 			};
-			
-			$(window).load(uni).resize(uni);
+			uni();
+			$(window).resize(uni);
 			//$(window).resize(uni);
 			
 			
