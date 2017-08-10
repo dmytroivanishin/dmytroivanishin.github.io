@@ -14,32 +14,32 @@
 			var h = image.height(),					// Высота картинки	
 				ml = image.css("margin-left");		// Отступ по левому краю
 				ml = parseInt(ml);
-
-			image.each(function(i){
-				tmp[i] = image.eq(i).width();		
-			}); // end each
-
-		function uni(){	
 			
-			if($(window).width() > 992){ setting.cell = cellDefault; }
-			if($(window).width() <= 768){ setting.cell = 3; }
-			if($(window).width() <= 480){ setting.cell = 2; }
-			if($(window).width() <= 320){ setting.cell = 1; }
-			
-			var	imageArr = [[]],					// Двумерный массив
-				indexArr = 0,						// Индекс первого массива
-				countImage = 1;						// Начальное число картинок
-			for(var i = 0; i < tmp.length; i++){
-				if(countImage <= setting.cell){ // Если картинок меньше или равно 3, то 
-					imageArr[indexArr][imageArr[indexArr].length] = tmp[i]; // Заносим в двумерный массив ширину кажой картинки
-					countImage += 1; // Прибавляем индекс
-				} else {
-					countImage = 2;
-					indexArr += 1;						// Прибавляем индекс первого массива
-					imageArr[indexArr] = new Array();	// Создаем новый массив в новом идексе
-					imageArr[indexArr][imageArr[indexArr].length] = tmp[i];	// Зановсим ширину картинки
+			function io(){
+				image.each(function(i){
+					tmp[i] = image.eq(i).width();		
+				}); // end each
+			};
+			function uni(){	
+				if($(window).width() > 992){ setting.cell = cellDefault; }
+				if($(window).width() <= 768){ setting.cell = 3; }
+				if($(window).width() <= 480){ setting.cell = 2; }
+				if($(window).width() <= 320){ setting.cell = 1; }
+
+				var	imageArr = [[]],					// Двумерный массив
+					indexArr = 0,						// Индекс первого массива
+					countImage = 1;						// Начальное число картинок
+				for(var i = 0; i < tmp.length; i++){
+					if(countImage <= setting.cell){ // Если картинок меньше или равно 3, то 
+						imageArr[indexArr][imageArr[indexArr].length] = tmp[i]; // Заносим в двумерный массив ширину кажой картинки
+						countImage += 1; // Прибавляем индекс
+					} else {
+						countImage = 2;
+						indexArr += 1;						// Прибавляем индекс первого массива
+						imageArr[indexArr] = new Array();	// Создаем новый массив в новом идексе
+						imageArr[indexArr][imageArr[indexArr].length] = tmp[i];	// Зановсим ширину картинки
+					}
 				}
-			}
 
 				var WIDTH = that.width(),	// Ширина блока
 					rowSum = 0,				// Сумма ширины картинок в строке
@@ -69,8 +69,10 @@
 					rowSum = 0;			// Сбрасываем сумму строки
 				}
 			};
-			uni();
-			$(window).resize(uni);
+			$(window).load(function(){
+				io();
+				uni();
+			}).resize(uni);
 		});
 		
 	};
