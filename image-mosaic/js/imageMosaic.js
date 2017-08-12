@@ -15,12 +15,12 @@
 				ml = image.css("margin-left");		// Отступ по левому краю
 				ml = parseInt(ml);
 			
-			function io(){
+			function getWidthImage(){
 				image.each(function(i){
 					tmp[i] = image.eq(i).width();		
 				}); // end each
 			};
-			function uni(){	
+			function setWidthImage(){	
 				if($(window).width() > 992){ setting.cell = cellDefault; }
 				if($(window).width() <= 768){ setting.cell = 3; }
 				if($(window).width() <= 480){ setting.cell = 2; }
@@ -70,9 +70,9 @@
 				}
 			};
 			$(window).load(function(){
-				io();
-				uni();
-			}).resize(uni);
+				getWidthImage();
+				setWidthImage();
+			}).resize(setWidthImage);
 		});
 		
 	};
