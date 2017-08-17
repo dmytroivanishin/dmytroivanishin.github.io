@@ -1,0 +1,15 @@
+html {
+  font-size: 100%; }
+
+.body {
+  background-color: #fff;
+  line-height: 1.2; }
+
+.image {
+	padding-top: 10px;
+	background-color: #fff;	
+}
+
+img {
+	border-radius: 5px;
+}

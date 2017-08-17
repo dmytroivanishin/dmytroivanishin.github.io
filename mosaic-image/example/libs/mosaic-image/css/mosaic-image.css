@@ -1,0 +1,19 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.mosaic-container { }
+.mosaic-container:before, .mosaic-container:after {
+  content: "";
+  display: table; }
+.mosaic-container:after {
+  clear: both; }
+
+.mosaic-container > .mosaic {
+	display: block;
+	position: relative;
+	background-color: none;
+	float: left; }
+
+.mosaic-container > .mosaic > a {
+	display: block; }
