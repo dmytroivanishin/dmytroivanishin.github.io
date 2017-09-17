@@ -11,6 +11,7 @@
 		function ready(){
 			var img = document.getElementsByTagName("img");
 			var p = document.getElementById("proc");
+			var pr = document.getElementById("pr");
 			var progress = 100 / img.length;
 			var count = 0;
 			p.innerText = count;
@@ -20,6 +21,7 @@
 					
 					count += progress;
 					p.innerText = count;
+					pr.value = count;
 				}
 			}
 			
@@ -58,6 +60,7 @@
 </head>
 <body>
 	<p id="proc"></p>
+	<progress max="100" value="0" id="pr"></progress>
 	<img src="img/8k.jpg" alt=""  id="imh">
 	<img src="img/8k2.jpg" alt=""  id="imh">
 	<img src="img/8k3.jpg" alt=""  id="imh">
