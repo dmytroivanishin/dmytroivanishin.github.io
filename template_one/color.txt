@@ -1,7 +1,0 @@
-fd6246 tomato
-a2c418 green
-d8ca1f yellow
-d969b5 pink
-b831cc purple
-19aec4 blue
-da2d86 magenta
