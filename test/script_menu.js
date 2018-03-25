@@ -22,19 +22,24 @@
 			  
 		 });
 		 
-		 $("#menu-menyu-magazina > li > a").click(function(e){
-			 e.preventDefault();
-			 var href = $(this).prop("href");
-			 
-			 submenu.slideUp(600, function(){
-				  window.location.href = href;
-			 });
-			
-		 });
+		
 		 
 		 console.log( window.location);
 		 
 	 });
+	 
+	  $("#menu-menyu-magazina > li > a").click(function(e){
+			 
+			 e.preventDefault();
+			 
+			 var href = $(this).prop("href"),
+				 submenu = $("#menu-menyu-magazina").find(".sub-menu");
+			 
+			 submenu.slideUp(2000, function(){
+				  window.location.href = href;
+			 });
+			console.log(href);
+		 });
 	 
 	 /*$("#menu-menyu-magazina").click(function(e){
 		 
