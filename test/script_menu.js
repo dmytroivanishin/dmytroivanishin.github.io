@@ -7,9 +7,9 @@
 			 submenu = $(this).find(".sub-menu");
 		 
 		 if(link == href){
-			 submenu.slideDown(200)
+			 submenu.slideDown(200);
 		 }
-		 
+		 console.log(link, href);
 		 //e.preventDefault();
 		 /*var submenu = $(this).find(".sub-menu");
 		 if(submenu.is(":hidden")){
