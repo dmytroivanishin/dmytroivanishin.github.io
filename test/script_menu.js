@@ -9,7 +9,7 @@
 		 
 		 $("#menu-menyu-magazina").children("li").each(function(index){
 			
-			 console.log(index,  $(this).children("li").children("a").prop("href"));
+			 console.log(index,  $(this).children("a").prop("href"));
 		 });
 		 
 		 if(link == href){
