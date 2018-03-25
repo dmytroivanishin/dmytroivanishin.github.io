@@ -1,6 +1,6 @@
  $(document).ready(function(){
 	 
-     var t = null;
+     var t = "";
 	 
 	 $("#menu-menyu-magazina").click(function(e){
 		 
