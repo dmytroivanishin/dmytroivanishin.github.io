@@ -4,12 +4,13 @@
 		 
 		 var link = window.location,
 			 href = $(this).children("li").children("a").prop("href"),
-			 submenu = $(this).find(".sub-menu");
+			 submenu = $(this).find(".sub-menu"),
+			 t = link + " " + href;
 		 
 		 if(link == href){
 			 submenu.slideDown(200);
 		 }
-		 console.log(link, href);
+		
 		 //e.preventDefault();
 		 /*var submenu = $(this).find(".sub-menu");
 		 if(submenu.is(":hidden")){
@@ -25,5 +26,5 @@
 			 $(this).hide();
 		 });*/
 	 });
-	
+	 console.log(t);
 });
