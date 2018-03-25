@@ -8,8 +8,8 @@
 			 submenu = $("#menu-menyu-magazina").find(".sub-menu");
 		 
 		 $("#menu-menyu-magazina").children("li").each(function(index){
-			 $(this).children("li").children("a").prop("href");
-			 console.log(index);
+			
+			 console.log(index,  $(this).children("li").children("a").prop("href"));
 		 });
 		 
 		 if(link == href){
