@@ -1,11 +1,11 @@
  $(document).ready(function(){
-      
+      	var t = "";
 	 $("#menu-menyu-magazina").click(function(e){
 		 
 		 var link = window.location,
 			 href = $(this).children("li").children("a").prop("href"),
-			 submenu = $(this).find(".sub-menu"),
-			 t = link + " " + href;
+			 submenu = $(this).find(".sub-menu");
+		t = link + " " + href;	 
 		 
 		 if(link == href){
 			 submenu.slideDown(200);
