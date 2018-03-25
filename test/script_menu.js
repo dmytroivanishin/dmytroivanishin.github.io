@@ -9,7 +9,7 @@
 				submenu = $(this).find(".sub-menu");
 
 			if(link == href){
-				submenu.slideDown(300);
+				submenu.delay(200).slideDown(300);
 			}
 		});
 		
