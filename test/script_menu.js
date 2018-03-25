@@ -1,10 +1,15 @@
  $(document).ready(function(){
-      
+	 
+     var t = "";
+	 
 	 $("#menu-menyu-magazina").click(function(e){
+		 
+		 e.preventDefault()
 		 
 		 var link = window.location,
 			 href = $(this).children("li").children("a").prop("href"),
-			 submenu = $(this).find(".sub-menu"),
+			 submenu = $(this).find(".sub-menu");
+		 
 			 t = link + " " + href;
 		 
 		 if(link == href){
