@@ -16,32 +16,40 @@
 			 	submenu.slideDown(200);
 			 }
 			 else {
-				submenu.slideUp(600); 
+				submenu.slideUp(600, function(){
+					//window.location.href = href;
+				}); 
 			 }
 
-			 console.log(index,  $(this).children("a").prop("href"), "test");
+			 //console.log(index,  $(this).children("a").prop("href"), "test");
 
-			 console.log(link, href);
+			// console.log(link, href);
+			  
 		 });
 		 
+		 console.log( window.location);
 		 
-
 	 });
 	 
 	 /*$("#menu-menyu-magazina").click(function(e){
 		 
-		 //e.preventDefault()
+		e.preventDefault()
 		 
-		 var link = window.location,
-			 href = $(this).children("li").children("a").prop("href"),
-			 submenu = $(this).find(".sub-menu");
+		var link = window.location,
+			href = $("#menu-menyu-magazina").children("li").children("a").prop("href"),
+			submenu = $("#menu-menyu-magazina").find(".sub-menu");
 
-			 t = link + " " + href;
-		 
-		 if(link == href){
-			 submenu.slideDown(200);
-		 }
-		console.log(link, href);
+		 	if(link == href){
+				window.location.href = href;
+			 	submenu.slideDown(200);
+				
+				
+			}
+			else {
+				submenu.slideUp(600, function(){
+					window.location.href = href;
+				}); 
+			 }
 		 //e.preventDefault();
 		 /*var submenu = $(this).find(".sub-menu");
 		 if(submenu.is(":hidden")){
