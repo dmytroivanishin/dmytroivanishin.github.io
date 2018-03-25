@@ -2,45 +2,46 @@
 	 
      //var t = "";
 	 
-	 $(window).load(function(){
-		 var link = window.location,
-			 submenu = $("#menu-menyu-magazina").find(".sub-menu");
-		 
-		 $("#menu-menyu-magazina").children("li").each(function(index){
-			
-			 var href = $(this).children("a").prop("href"),
-				submenu = $(this).find(".sub-menu");
-			
-			 if(link == href){
-			 	submenu.slideDown(200);
-			 }
+	$(window).load(function(){
+		var link = window.location;
+
+		$("#menu-menyu-magazina").children("li").each(function(index){
+
+		var href = $(this).children("a").prop("href"),
+			submenu = $(this).find(".sub-menu");
+
+			if(link == href){
+				submenu.slideDown(200);
+			}
 
 
-			 //console.log(index,  $(this).children("a").prop("href"), "test");
+	//console.log(index,  $(this).children("a").prop("href"), "test");
 
-			// console.log(link, href);
-			  
-		 });
-		 
-		
-		 
-		 console.log( window.location);
-		 
-	 });
-	 
-	  $("#menu-menyu-magazina > li > a").click(function(e){
-			 
-			 e.preventDefault();
-			 
-			 var href = $(this).prop("href"),
-				 submenu = $("#menu-menyu-magazina").find(".sub-menu");
-			 
-			 submenu.slideUp(2000, function(){
-				  window.location.href = href;
-			 });
-			console.log(href);
-		 });
-	 
+	// console.log(link, href);
+
+		});
+
+
+
+		console.log( window.location);
+
+	});
+
+	
+	$("#menu-menyu-magazina > li > a").click(function(e){
+
+		e.preventDefault();
+
+		var href = $(this).prop("href"),
+	 		submenu = $("#menu-menyu-magazina").find(".sub-menu");
+
+		submenu.slideUp(2000, function(){
+	  //$(this).text("dfsd");
+	 		console.log($(this));
+		});
+
+	});
+
 	 /*$("#menu-menyu-magazina").click(function(e){
 		 
 		e.preventDefault()
