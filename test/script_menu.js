@@ -9,17 +9,22 @@
 		 
 		 $("#menu-menyu-magazina").children("li").each(function(index){
 			
+			 var href = $(this).children("a").prop("href"),
+				submenu = $(this).find(".sub-menu");
+			
+			 if(link == href){
+			 	submenu.slideDown(200);
+			 }
+			 else {
+				submenu.slideUp(600); 
+			 }
+
 			 console.log(index,  $(this).children("a").prop("href"), "test");
-		 });
+
 		 
-		 if(link == href){
-			 submenu.slideDown(200);
-		 }
-		 else {
-			submenu.slideUp(600); 
-		 }
 		 
 		 console.log(link, href);
+
 	 });
 	 
 	 /*$("#menu-menyu-magazina").click(function(e){
