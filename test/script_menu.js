@@ -1,11 +1,7 @@
  $(document).ready(function(){
-<<<<<<< HEAD
 	 
-     var t = "";
+     var t = null;
 	 
-=======
-      	var t = "";
->>>>>>> cd157ea579c32757a986d8ac4bd3aa14acdb9d70
 	 $("#menu-menyu-magazina").click(function(e){
 		 
 		 e.preventDefault()
@@ -13,12 +9,8 @@
 		 var link = window.location,
 			 href = $(this).children("li").children("a").prop("href"),
 			 submenu = $(this).find(".sub-menu");
-<<<<<<< HEAD
-		 
+
 			 t = link + " " + href;
-=======
-		t = link + " " + href;	 
->>>>>>> cd157ea579c32757a986d8ac4bd3aa14acdb9d70
 		 
 		 if(link == href){
 			 submenu.slideDown(200);
