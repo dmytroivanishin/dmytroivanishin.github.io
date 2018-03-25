@@ -43,5 +43,5 @@
 			 $(this).hide();
 		 });*/
 	 });
-	 console.log(t);*///
+	 console.log(t);///
 });
