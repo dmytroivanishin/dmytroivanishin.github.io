@@ -37,9 +37,10 @@
 
 		submenu.slideUp(2000, function(){
 	  //$(this).text("dfsd");
-	 		console.log($(this));
+			console.log("asd");
+	 		
 		});
-
+			console.log($(this));
 	});
 
 	 /*$("#menu-menyu-magazina").click(function(e){
