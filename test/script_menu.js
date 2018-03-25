@@ -21,9 +21,10 @@
 
 			 console.log(index,  $(this).children("a").prop("href"), "test");
 
+			 console.log(link, href);
+		 });
 		 
 		 
-		 console.log(link, href);
 
 	 });
 	 
