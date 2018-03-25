@@ -1,7 +1,3 @@
-ul#menu-menyu-magazina {
-	list-style-type: none;
-}
-
 ul#menu-menyu-magazina > li > a {
 	position: relative;
 	padding-left: 14px;
@@ -13,11 +9,11 @@ ul#menu-menyu-magazina > li > a::before {
 	top: 0;
 	left: 0;
 }
+
 ul#menu-menyu-magazina > li.current-menu-item > a::before{
 	content: "-";
 }
 
-
-ul#menu-menyu-magazina ul {
+.sub-menu{
 	display: none;
 }
