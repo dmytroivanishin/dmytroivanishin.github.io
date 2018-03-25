@@ -10,6 +10,9 @@
 		 if(link == href){
 			 submenu.slideDown(200);
 		 }
+		 else {
+			submenu.slideUp(600); 
+		 }
 		 
 		 console.log(link, href);
 	 });
