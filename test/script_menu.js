@@ -7,6 +7,10 @@
 			 href = $("#menu-menyu-magazina").children("li").children("a").prop("href"),
 			 submenu = $("#menu-menyu-magazina").find(".sub-menu");
 		 
+		 $("#menu-menyu-magazina").children("li").each(function(index){
+			 console.logindex.children("a").prop("href"));
+		 });
+		 
 		 if(link == href){
 			 submenu.slideDown(200);
 		 }
