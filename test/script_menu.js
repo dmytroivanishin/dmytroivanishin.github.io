@@ -15,15 +15,6 @@
 			 	submenu.slideDown(200);
 			 }
 
-			 else {
-				submenu.slideUp(600, function(){
-					if(window.location.origin != href){
-						//window.location.href = href;
-					}
-					//window.location.href = href;
-				}); 
-			 }
-
 
 			 //console.log(index,  $(this).children("a").prop("href"), "test");
 
@@ -31,9 +22,9 @@
 			  
 		 });
 		 
-		 $("#menu-menyu-magazina").click(function(e){
+		 $("#menu-menyu-magazina > li > a").click(function(e){
 			 e.preventDefault();
-			 var href = $(this).children("li").children("a").prop("href")
+			 var href = $(this).prop("href");
 			 
 			 submenu.slideUp(600, function(){
 				  window.location.href = href;
