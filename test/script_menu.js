@@ -4,7 +4,7 @@
 	 
 	 $("#menu-menyu-magazina").click(function(e){
 		 
-		 e.preventDefault()
+		 //e.preventDefault()
 		 
 		 var link = window.location,
 			 href = $(this).children("li").children("a").prop("href"),
