@@ -15,6 +15,15 @@
 			 	submenu.slideDown(200);
 			 }
 
+			 else {
+				submenu.slideUp(600, function(){
+					if(window.location.origin != href){
+						//window.location.href = href;
+					}
+					//window.location.href = href;
+				}); 
+			 }
+
 
 			 //console.log(index,  $(this).children("a").prop("href"), "test");
 
