@@ -4,7 +4,6 @@
 	 
 	 $(window).load(function(){
 		 var link = window.location,
-			 href = $("#menu-menyu-magazina").children("li").children("a").prop("href"),
 			 submenu = $("#menu-menyu-magazina").find(".sub-menu");
 		 
 		 $("#menu-menyu-magazina").children("li").each(function(index){
@@ -15,19 +14,22 @@
 			 if(link == href){
 			 	submenu.slideDown(200);
 			 }
-			 else {
-				submenu.slideUp(600, function(){
-					if(window.location.origin != href){
-						window.location.href = href;
-					}
-					//window.location.href = href;
-				}); 
-			 }
+
 
 			 //console.log(index,  $(this).children("a").prop("href"), "test");
 
 			// console.log(link, href);
 			  
+		 });
+		 
+		 $("#menu-menyu-magazina").click(function(e){
+			 e.preventDefault();
+			 var href = $(this).children("li").children("a").prop("href")
+			 
+			 submenu.slideUp(600, function(){
+				  window.location.href = href;
+			 });
+			
 		 });
 		 
 		 console.log( window.location);
