@@ -1,0 +1,7 @@
+ul#menu-menyu-magazina {
+	list-style-type: none;
+}
+
+ul#menu-menyu-magazina ul {
+	display: none;
+}
