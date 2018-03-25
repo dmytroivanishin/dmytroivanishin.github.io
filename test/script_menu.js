@@ -1,15 +1,20 @@
  $(document).ready(function(){
 	 
-     var t = "";
+     //var t = "";
 	 
 	 $(window).load(function(){
-		  var link = window.location,
-			 href = $("#menu-menyu-magazina").children("li").children("a").prop("href");
+		 var link = window.location,
+			 href = $("#menu-menyu-magazina").children("li").children("a").prop("href"),
+			 submenu = $("#menu-menyu-magazina").find(".sub-menu");
+		 
+		 if(link == href){
+			 submenu.slideDown(200);
+		 }
 		 
 		 console.log(link, href);
 	 });
 	 
-	 $("#menu-menyu-magazina").click(function(e){
+	 /*$("#menu-menyu-magazina").click(function(e){
 		 
 		 //e.preventDefault()
 		 
@@ -38,5 +43,5 @@
 			 $(this).hide();
 		 });*/
 	 });
-	 console.log(t);
+	 console.log(t);*///
 });
