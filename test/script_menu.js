@@ -17,6 +17,9 @@
 			 }
 			 else {
 				submenu.slideUp(600, function(){
+					if(window.location.origin != href){
+						window.location.href = href;
+					}
 					//window.location.href = href;
 				}); 
 			 }
