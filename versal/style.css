@@ -615,6 +615,8 @@ footer {
     width: 100%;
     clear: both;
     text-align: center; }
+    footer .bottom .social a:first-of-type {
+      margin-left: 0; }
   footer .bottom p {
     width: 100%;
     padding-bottom: 10px;
