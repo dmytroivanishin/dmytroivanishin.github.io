@@ -5,7 +5,6 @@ $(document).ready(function(){
 	$(".header-menu nav > ul > li").each(function(i, t){
 		children = t.children.length
 		if($(this).hasClass("menu-item-has-children")){
-			////$(this).addClass("subMenuItem");
 			$(this).children("a").on("click", function(e){
 				e.preventDefault();
 			})
@@ -17,7 +16,6 @@ $(document).ready(function(){
 	if($(window).width() <= 992){
 		$(".header-menu nav > ul > li").on("click", function(e){
 			var submenu = $(this).children("ul");
-				//submenu.css("opacity", 1);
 
 			if(submenu.is(":hidden")){
 				submenu.slideDown(300);
@@ -42,7 +40,6 @@ $(document).ready(function(){
 	
 	$(".header-background .block-item").each(function(){
 		attr = $(this).attr("data-background");
-			//alert(attr);
 		$(this).css("backgroundImage", "url(" + attr + ")");
 	});
 		
@@ -53,7 +50,7 @@ $(document).ready(function(){
 		items: 1,
 		dots: true,
 		loop: true,
-		//autoplay: true
+		autoplay: true
 	});
 	
 	$(".products").owlCarousel({
