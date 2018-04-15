@@ -700,10 +700,12 @@ footer {
       header .header-menu button {
         float: none;
         margin: 20px auto; }
+    header .center-addres {
+      text-align: center; }
     header .addres {
-      width: 45%;
-      margin: 0 auto;
-      padding-top: 10px; }
+      display: inline-block;
+      padding-top: 10px;
+      text-align: left; }
     header .col-md-4:first-of-type .addres {
       float: none; }
     header .col-md-4:last-of-type .addres {
@@ -751,8 +753,6 @@ footer {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  header .addres {
-    width: 50%; }
   header .header-background {
     min-height: 340px; }
     header .header-background .block-item {
@@ -790,8 +790,6 @@ footer {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  header .addres {
-    width: 80%; }
   header .header-background {
     min-height: 320px; }
     header .header-background .block-item {
@@ -832,8 +830,6 @@ footer {
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  header .addres {
-    width: 90%; }
   footer .footer-menu nav {
     width: 100%; }
     footer .footer-menu nav:nth-of-type(1n) {
