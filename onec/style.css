@@ -793,7 +793,11 @@ footer {
     header .phone-container p {
       font-size: 1.2em; }
   header .about h1 {
-    font-size: 4em; } }
+    font-size: 4em; }
+  header .header-bottom {
+    background-position: -100% center; }
+  .feedback {
+    background-position: -40% bottom; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
