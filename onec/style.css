@@ -425,7 +425,7 @@ header {
     header .about p:first-child {
       text-transform: uppercase; }
     header .about h1 {
-      font-weight: 900;
+      font-weight: 800;
       font-size: 5em;
       text-transform: uppercase;
       color: #272727;
@@ -521,7 +521,7 @@ section {
         position: absolute;
         top: -12px;
         left: 0;
-        font-weight: 900;
+        font-weight: 800;
         font-size: 1.6em;
         color: #ffca40; }
     .items .item ul {
