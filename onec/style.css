@@ -241,6 +241,11 @@ input[type="submit"] {
       .order-popup .container-order .row-order p {
         margin-bottom: 20px;
         text-align: center; }
+      .order-popup .container-order .row-order input[type="submit"] {
+        background-color: #ffca40; }
+        .order-popup .container-order .row-order input[type="submit"]:hover {
+          background-color: #d82819;
+          color: #fff; }
   .order-popup .close-popup {
     width: 100%;
     height: 70px;
@@ -277,7 +282,7 @@ input[type="submit"] {
     .order-popup label::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: -4px;
       left: 0;
       width: 26px;
       height: 26px;
@@ -525,7 +530,8 @@ section {
       .items .item ul li {
         font-weight: 400;
         font-size: 1.3em;
-        color: #2daae1; }
+        color: #2daae1;
+        margin-bottom: 20px; }
         .items .item ul li a {
           text-decoration: underline; }
           .items .item ul li a:hover {
@@ -583,9 +589,16 @@ section {
     width: 292px;
     height: 61px;
     margin-top: 40px;
-    float: right; }
+    float: right;
+    background-color: #ffca40; }
+    .feedback input[type="submit"]:hover {
+      background-color: #d82819;
+      color: #fff; }
   .feedback .btn-container {
     display: none; }
+
+.offers .offer-hidden12 {
+  display: none; }
 
 .offers .offer {
   padding: 30px 100px;
@@ -602,8 +615,8 @@ section {
        -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); }
   .offers .offer img {
-    width: auto;
-    height: 100%; }
+    width: 100%;
+    height: auto; }
   .offers .offer .desc h3 {
     font-weight: 700;
     font-size: 1.7em;
@@ -662,7 +675,8 @@ section {
     .products .product ul li {
       font-weight: 400;
       font-size: 1.3em;
-      color: #2daae1; }
+      color: #2daae1;
+      margin-bottom: 20px; }
       .products .product ul li a {
         text-decoration: underline; }
         .products .product ul li a:hover {
@@ -706,7 +720,8 @@ section {
     -webkit-transform: translate(0, -50%);
        -moz-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
-            transform: translate(0, -50%); }
+            transform: translate(0, -50%);
+    z-index: -2; }
     .gallery .company .owl-nav .owl-prev {
       float: left;
       margin-left: -30px; }
@@ -903,7 +918,7 @@ footer {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   header {
-    height: 854px;
+    height: 890px;
     background-position: 65% center;
     -webkit-background-size: auto 60%;
        -moz-background-size: auto 60%;
@@ -938,7 +953,8 @@ footer {
       font-size: 1.6em;
       padding-left: 70px; }
       .items .item h3::before {
-        font-size: 1.2em; }
+        top: -8px;
+        font-size: 1.5em; }
   .offers .offer {
     padding: 20px 50px; }
   .gallery {
@@ -958,7 +974,47 @@ footer {
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /**/ }
+  header {
+    height: 940px;
+    background-position: 65% 40%;
+    -webkit-background-size: auto 40%;
+       -moz-background-size: auto 40%;
+            background-size: auto 40%; }
+    header::after {
+      display: none; }
+    header .about h1 {
+      font-size: 2em; }
+    header .about .btn-collection .btn {
+      width: 130px;
+      padding: 16px 2px;
+      font-size: 0.8em; }
+    header .header-bottom .text {
+      padding: 0 10px; }
+    header .header-bottom p {
+      font-size: 1em; }
+  .offers .offer {
+    padding: 20px 10px; }
+    .offers .offer .desc h3 {
+      font-size: 1em; }
+    .offers .offer .desc p:last-of-type {
+      font-size: 1.4em; }
+      .offers .offer .desc p:last-of-type span {
+        margin-left: 10px; }
+    .offers .offer .desc .detail {
+      margin-top: 50px;
+      margin-right: 26px;
+      font-size: 0.8em; }
+      .offers .offer .desc .detail::after {
+        top: 4px; }
+  .offers .offer-hidden9 {
+    display: none; }
+  .offers .offer-hidden12 {
+    display: block; }
+  .products .product img {
+    width: 100%;
+    height: auto; }
+  .items .item .price {
+    font-size: 1.3em; } }
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */

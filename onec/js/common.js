@@ -31,12 +31,13 @@ $(document).ready(function(){
 		$("body").css("overflow", "auto");
 	});
 	
+	
 	$(".company").owlCarousel({
 		items: 4,
 		margin: 20,
-		center: true,
+		center: false,
 		nav: true,
-		navText: ["<img src='./img/arrow_l.png'>", "<img src='./img/arrow_r.png'>"],
+		navText: ["<img src='./img/arrow_l_grey.png'>", "<img src='./img/arrow_r_grey.png'>"],
 		dots: false,
 		loop: true,
 		autoplay: false,
@@ -59,5 +60,32 @@ $(document).ready(function(){
 			}
 		}
 	});
+	(function(){
+		var cl, et, img, name, format, src;
+		$(".owl-nav").hover(function(e){
+			cl = e.target.children[0].src;
+			et = e.target.children[0];
+
+			if(e.target.className === "owl-prev"){
+				e.target.children[0].src = "./img/arrow_l.png";
+			}
+			else {
+				e.target.children[0].src = "./img/arrow_r.png";
+			}
+		}, function(){
+			et.src = cl;				
+		});
+		
+		$(".company .item").hover(function(){
+			img = $(this).find("img");
+			name = img.attr("src").split(/\//)[3];
+			format  = name.split(".");
+			src = "./img/brand/"+format[0] + "_color." + format[1];
+			img.attr("src", src);
+		}, function(){
+			img.attr("src", "./img/brand/" + name);
+		});
+		
+	}());
 	
 });
