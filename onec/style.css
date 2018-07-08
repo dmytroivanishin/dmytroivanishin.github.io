@@ -638,16 +638,16 @@ section {
     margin-top: 60px; }
 
 .products .nth:nth-child(1) .product {
-  background: url("/img/drweb.png") 110% 100% no-repeat; }
+  background: url("./img/drweb.png") 110% 100% no-repeat; }
 
 .products .nth:nth-child(2) .product {
-  background: url("/img/mc.png") 110% 100% no-repeat; }
+  background: url("./img/mc.png") 110% 100% no-repeat; }
 
 .products .nth:nth-child(3) .product {
-  background: url("/img/onec.png") 110% 100% no-repeat; }
+  background: url("./img/onec.png") 110% 100% no-repeat; }
 
 .products .nth:nth-child(4) .product {
-  background: url("/img/kas.png") 110% 100% no-repeat; }
+  background: url("./img/kas.png") 110% 100% no-repeat; }
 
 .products .product {
   margin-bottom: 30px;
