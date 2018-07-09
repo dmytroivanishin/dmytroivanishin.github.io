@@ -107,6 +107,20 @@
 .bg:nth-child(5) {
   background-color: blue; }
 
+.hov {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  background-color: #ccc;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+  .hov:hover {
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+       -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+
 body {
   color: #000;
   background-color: #fff;
@@ -638,16 +652,16 @@ section {
     margin-top: 60px; }
 
 .products .nth:nth-child(1) .product {
-  background: url("/img/drweb.png") 110% 100% no-repeat; }
+  background: url("./img/drweb.png") 110% 100% no-repeat; }
 
 .products .nth:nth-child(2) .product {
-  background: url("/img/mc.png") 110% 100% no-repeat; }
+  background: url("./img/mc.png") 110% 100% no-repeat; }
 
 .products .nth:nth-child(3) .product {
-  background: url("/img/onec.png") 110% 100% no-repeat; }
+  background: url("./img/onec.png") 110% 100% no-repeat; }
 
 .products .nth:nth-child(4) .product {
-  background: url("/img/kas.png") 110% 100% no-repeat; }
+  background: url("./img/kas.png") 110% 100% no-repeat; }
 
 .products .product {
   margin-bottom: 30px;
@@ -696,10 +710,13 @@ section {
     height: 150px;
     float: left;
     border: 1px solid #e7e7e7;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s; }
+    -webkit-box-shadow: 0 0 20px transparent;
+       -moz-box-shadow: 0 0 20px transparent;
+            box-shadow: 0 0 20px transparent;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s; }
     .gallery .company .item:hover {
       border: 1px solid transparent;
       -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -810,7 +827,9 @@ footer {
   header .about h1 {
     font-size: 4em; }
   header .header-bottom {
-    background-position: -100% 60%; } }
+    background-position: -100% 60%; }
+  .feedback {
+    background: url("./img/man.png") -120px bottom no-repeat, url("./img/background_section.jpg") center bottom no-repeat; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -827,6 +846,9 @@ footer {
       font-size: 3em; }
     header .header-bottom {
       background-position: -240px 60%;
+      -webkit-background-size: auto 180%;
+         -moz-background-size: auto 180%;
+              background-size: auto 180%;
       line-height: 1.2; }
       header .header-bottom h3 {
         margin-top: 20px; }
@@ -839,6 +861,8 @@ footer {
     padding-left: 70px; }
   .large-hidden {
     display: none; }
+  .feedback {
+    background: url("./img/man.png") -200px bottom no-repeat, url("./img/background_section.jpg") center bottom no-repeat; }
   footer .left-block img {
     padding: 0 0 20px; }
   footer .addres {
@@ -898,9 +922,9 @@ footer {
       height: 216px;
       text-align: center;
       background-position: -200px center;
-      -webkit-background-size: auto 160%;
-         -moz-background-size: auto 160%;
-              background-size: auto 160%; }
+      -webkit-background-size: auto 150%;
+         -moz-background-size: auto 150%;
+              background-size: auto 150%; }
       header .header-bottom h3 {
         margin-top: 30px; }
       header .header-bottom p {
@@ -1010,6 +1034,11 @@ footer {
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px) {
+  header .header-bottom {
+    -webkit-background-size: auto 105%;
+       -moz-background-size: auto 105%;
+            background-size: auto 105%;
+    background-position: -150px 20px; }
   .offers .offer {
     padding: 20px 10px; }
     .offers .offer .desc h3 {

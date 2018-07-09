@@ -62,19 +62,19 @@ $(document).ready(function(){
 		}
 	});
 	(function(){
-		var cl, et, img, name, format, src;
-		$(".owl-nav").hover(function(e){
-			cl = e.target.children[0].src;
-			et = e.target.children[0];
+		var cl, el, img, name, format, src;
 
-			if(e.target.className === "owl-prev"){
-				e.target.children[0].src = "./img/arrow_l.png";
-			}
-			else {
-				e.target.children[0].src = "./img/arrow_r.png";
-			}
+		$(".owl-prev").hover(function(){
+			el = $(this).children("img").attr("src");
+			$(this).children("img").attr("src", "./img/arrow_l.png");
 		}, function(){
-			et.src = cl;				
+			$(this).children("img").attr("src", el);				
+		});
+		$(".owl-next").hover(function(){
+			el = $(this).children("img").attr("src");
+			$(this).children("img").attr("src", "./img/arrow_r.png");
+		}, function(){
+			$(this).children("img").attr("src", el);				
 		});
 		
 		$(".company .item").hover(function(){
