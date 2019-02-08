@@ -6818,6 +6818,7 @@ a {
   .humburger--hidden {
     display: block; }
   .nav__item {
+	line-height: 40px;
     margin-left: 0; }
   .decription-team__figure {
     -webkit-box-flex: 1;

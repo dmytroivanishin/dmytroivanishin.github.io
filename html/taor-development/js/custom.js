@@ -1,23 +1,6 @@
 $(document).ready(function(){
 	
-	function resize(){
-		var $hieghtOffset = $(".header__top").height() + $(".header__brand").height(),
-		$heightMenu = $(window).height() - $hieghtOffset;
-
-		$(".header__popup").height($heightMenu);
-		
-		var $width = $(window).width();
-		
-		if($width >= 992){
-			$(".header__popup").removeClass("nav__menu--show");
-			$(".humburger").removeClass("humburger--active");
-			$("body").removeClass("scroll");
-		}
-		
-		var widthGallery = $(".portfolio__block").width();
-		$(".portfolio__block").height(widthGallery);
-		
-	}
+	
 	
 	
 	//$(".header__menu").css("left", "-100%");
@@ -116,7 +99,26 @@ $(document).ready(function(){
 		}]
 	});
 	
-	$(window).on("resize", resize);
-	$(window).on("load", resize);
+	
 	
 });
+function resize(){
+		var $hieghtOffset = $(".header__top").height() + $(".header__brand").height(),
+		$heightMenu = $(window).height() - $hieghtOffset;
+
+		$(".header__popup").height($heightMenu);
+		
+		var $width = $(window).width();
+		
+		if($width >= 992){
+			$(".header__popup").removeClass("nav__menu--show");
+			$(".humburger").removeClass("humburger--active");
+			$("body").removeClass("scroll");
+		}
+		
+		var widthGallery = $(".portfolio__block").width();
+		$(".portfolio__block").height(widthGallery);
+		
+	}
+$(window).on("resize", resize);
+	$(window).on("load", resize);
