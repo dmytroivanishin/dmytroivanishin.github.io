@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Mobile Prices</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+	<script src="./js/all.min.js"></script>
+	<script src="./js/common.js"></script>
+</head>
+<body>	
+	
+	<header class="header">
+		<div class="header__wrap-search-media">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="header__humburger-close">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-10 offset-1">
+							<form action="/" class="header__form-search-media">
+								<input type="text" class="header__input-search-media" placeholder="Search for products...">
+								<button class="header__btn-search-media">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="header__humburger" style="display: none">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="header__top">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-2 d-block d-lg-none">
+						<div class="header__humburger-offset"></div>
+					</div>
+					<div class="col-8 col-lg-3 text-center text-lg-left">
+						<a href="#" class="header__link-logo">
+							<img src="./img/Logo.png" srcset="./img/Logo@2x.png 2x" alt="Mobile Prices" class="header__logo">
+						</a>
+					</div>
+					<div class="col-2 d-block d-lg-none text-right">
+						<button class="header__btn-search">
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</button>
+					</div>
+					<div class="col-lg-8 offset-lg-1 d-none d-lg-block">
+						<form action="/" class="header__form-search">
+							<input type="text" class="header__input-search" placeholder="Search for products...">
+							<button class="header__btn-search">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__menu">
+			<nav class="header__nav nav">
+				<ul class="header__menu-nav nav__menu">
+					<li class="header__item nav__item"><a href="#" class="nav__link">Top sales</a></li>
+					<li class="header__item nav__item"><a href="#" class="nav__link">Best sellers</a></li>
+					<li class="header__item nav__item"><a href="#" class="nav__link">Top 10</a></li>
+					<li class="header__item nav__item"><a href="#" class="nav__link">Upcoming mobiles</a></li>
+					<li class="header__item nav__item"><a href="#" class="nav__link">Bestnews & reviews</a></li>
+					<li class="header__item nav__item"><a href="#" class="nav__link">Mobile recharge</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header__filter">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="header__filter-wrap">
+							<div class="header__filter-icon">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="header__filter-text">Filters</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+		
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<aside class="aside">
+					<form action="/" class="aside__form">
+						<div class="aside__accordion aside__range-price">
+							<div class="aside__accordion-title aside__accordion-title--uppercase">Price range</div>
+							<div class="aside__range">
+								<input type="text" class="aside__range-input" value="">
+							</div>
+						</div>
+						
+						<div class="aside__accordion">
+							<div class="aside__accordion-title aside__accordion-title--uppercase">Material (body)</div>
+							<ul class="aside__accordion-menu">
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="plastic" id="plastic" class="aside__accordion-filter">
+									<label for="plastic" class="aside__accordion-text">Plastic</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="aluminum" id="aluminum" class="aside__accordion-filter">
+									<label for="aluminum" class="aside__accordion-text">Aluminum</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="metal" id="metal" class="aside__accordion-filter">
+									<label for="metal" class="aside__accordion-text">Metal</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="glass" id="glass" class="aside__accordion-filter">
+									<label for="glass" class="aside__accordion-text">Glass</label>
+								</li>
+							</ul>
+						</div>
+						<div class="aside__accordion">
+							<div class="aside__accordion-title">Display type</div>
+							<ul class="aside__accordion-menu">
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="Sensor" id="Sensor" class="aside__accordion-filter">
+									<label for="Sensor" class="aside__accordion-text">Sensor</label>
+								</li>
+							</ul>
+						</div>
+						<div class="aside__accordion">
+							<div class="aside__accordion-title">Screen Size</div>
+							<ul class="aside__accordion-menu">
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="four" id="four" class="aside__accordion-filter">
+									<label for="four" class="aside__accordion-text">4</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="four5" id="four5" class="aside__accordion-filter">
+									<label for="four5" class="aside__accordion-text">4.5</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="five" id="five" class="aside__accordion-filter">
+									<label for="five" class="aside__accordion-text">5</label>
+								</li>
+							</ul>
+						</div>
+						<div class="aside__accordion">
+							<div class="aside__accordion-title">Capacity</div>
+							<ul class="aside__accordion-menu">
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="One" id="One" class="aside__accordion-filter">
+									<label for="One" class="aside__accordion-text">One</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="Two" id="Two" class="aside__accordion-filter">
+									<label for="Two" class="aside__accordion-text">Two</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="Three" id="Three" class="aside__accordion-filter">
+									<label for="Three" class="aside__accordion-text">Three</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="Four" id="Four" class="aside__accordion-filter">
+									<label for="Four" class="aside__accordion-text">Four</label>
+								</li>
+							</ul>
+						</div>
+						<div class="aside__accordion">
+							<div class="aside__accordion-title">Device RAM</div>
+							<ul class="aside__accordion-menu">
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="onegb" id="onegb" class="aside__accordion-filter">
+									<label for="onegb" class="aside__accordion-text">1 Gb</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="onedotfivegb" id="onedotfivegb" class="aside__accordion-filter">
+									<label for="onedotfivegb" class="aside__accordion-text">1.5 Gb</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="twogb" id="twogb" class="aside__accordion-filter">
+									<label for="twogb" class="aside__accordion-text">2 Gb</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="threegb" id="threegb" class="aside__accordion-filter">
+									<label for="threegb" class="aside__accordion-text">3 Gb</label>
+								</li>
+							</ul>
+						</div>
+						<div class="aside__accordion">
+							<div class="aside__accordion-title">OS</div>
+							<ul class="aside__accordion-menu">
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="ios" id="ios" class="aside__accordion-filter">
+									<label for="ios" class="aside__accordion-text">IOS</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="android" id="android" class="aside__accordion-filter">
+									<label for="android" class="aside__accordion-text">Android</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="windows_mobile" id="windows_mobile" class="aside__accordion-filter">
+									<label for="windows_mobile" class="aside__accordion-text">Windows Mobile</label>
+								</li>
+							</ul>
+						</div>
+						<div class="aside__accordion">
+							<div class="aside__accordion-title">Number of cameras</div>
+							<ul class="aside__accordion-menu">
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="plastic" id="plastic" class="aside__accordion-filter">
+									<label for="plastic" class="aside__accordion-text">Plastic</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="aluminum" id="aluminum" class="aside__accordion-filter">
+									<label for="aluminum" class="aside__accordion-text">Aluminum</label>
+								</li>
+							</ul>
+						</div>
+						<div class="aside__accordion">
+							<div class="aside__accordion-title">Megapixels Camera</div>
+							<ul class="aside__accordion-menu">
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="twelve" id="twelve" class="aside__accordion-filter">
+									<label for="twelve" class="aside__accordion-text">12</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="thirteen" id="thirteen" class="aside__accordion-filter">
+									<label for="thirteen" class="aside__accordion-text">13</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="fourteen" id="fourteen" class="aside__accordion-filter">
+									<label for="fourteen" class="aside__accordion-text">14</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="fifteen" id="fifteen" class="aside__accordion-filter">
+									<label for="fifteen" class="aside__accordion-text">15</label>
+								</li>
+							</ul>
+						</div>
+						<div class="aside__accordion">
+							<div class="aside__accordion-title">Megapixels Front Camera</div>
+							<ul class="aside__accordion-menu">
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="six" id="six" class="aside__accordion-filter">
+									<label for="six" class="aside__accordion-text">6</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="seven" id="seven" class="aside__accordion-filter">
+									<label for="seven" class="aside__accordion-text">7</label>
+								</li>
+							</ul>
+						</div>
+						<div class="aside__accordion">
+							<div class="aside__accordion-title">Sim Cards Slots</div>
+							<ul class="aside__accordion-menu">
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="onesim" id="onesim" class="aside__accordion-filter">
+									<label for="onesim" class="aside__accordion-text">1 sim</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="twosim" id="twosim" class="aside__accordion-filter">
+									<label for="twosim" class="aside__accordion-text">2 sim</label>
+								</li>
+							</ul>
+						</div>
+						<div class="aside__accordion">
+							<div class="aside__accordion-title">Special Features</div>
+							<ul class="aside__accordion-menu">
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="other1" id="other1" class="aside__accordion-filter">
+									<label for="other1" class="aside__accordion-text">Other 1</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="other2" id="other2" class="aside__accordion-filter">
+									<label for="other2" class="aside__accordion-text">Other 2</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="other3" id="other3" class="aside__accordion-filter">
+									<label for="other3" class="aside__accordion-text">Other 3</label>
+								</li>
+								<li class="aside__accordion-item">
+									<input type="checkbox" name="other4" id="other4" class="aside__accordion-filter">
+									<label for="other4" class="aside__accordion-text">Other 4</label>
+								</li>
+							</ul>
+						</div>
+					</form>
+				</aside>
+			</div>
+
+			<div class="col-lg-9">
+				
+				<div class="sort-by sort-by--m-top">
+					<div class="sort-by__count"><span>5435</span> ITEMS</div>
+					<div class="sort-by__menu">
+						<div class="sort-by__text">Sort by:</div>
+						
+						<select name="user-rating" id="userRating">
+							<option value="1">Nice</option>
+							<option value="2">Very nice</option>
+							<option value="3">Awesome</option>
+							<option value="4">Godlike</option>
+						</select>
+
+<!--						<div class="sort-by__list">User raiting</div>-->
+					</div>
+				</div>
+				
+				<article class="article">
+					<div class="article__img-wrap"><a href="#"><img src="./img/5859425_sd@2x.png" alt="" class="article__img"></a></div>
+					<div class="article__content">
+						<h3 class="article__title"><a href="#">Apple iPhone 6 32GB Space Gray</a></h3>
+						<div class="article__table">
+							<div class="article__tr">
+								<div class="article__td">Wireless Technology</div>
+								<div class="article__td">4G, 4G LTE, LTE</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Operating System</div>
+								<div class="article__td">Apple iOS 9</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Maximum Usage Time</div>
+								<div class="article__td">14 hours</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Internal Memory</div>
+								<div class="article__td">32 gigabytes</div>
+							</div>
+						</div>
+						<a href="#" class="article__more">All specifications</a>
+					</div>
+					<div class="article__price">
+						<div class="article__price-table">
+							<div class="article__price-tr">
+								<div class="article__price-td">From</div>
+								<div class="article__price-td"><span class="article__price-from">$3 299.99</span></div>
+							</div>
+							<div class="article__price-tr">
+								<div class="article__price-td">Stores</div>
+								<div class="article__price-td"><span class="article__price-stores">14</span></div>
+							</div>
+							<div class="article__price-tr">
+								<div class="article__price-td">User score</div>
+								<div class="article__price-td"><span class="article__price-score">4.8</span></div>
+							</div>
+						</div>
+						<button class="article__price-btn">Compare price</button>
+					</div>
+				</article>
+				<article class="article">
+					<div class="article__img-wrap"><a href="#"><img src="./img/5859425_sd@2x.png" alt="" class="article__img"></a></div>
+					<div class="article__content">
+						<h3 class="article__title"><a href="#">Apple iPhone 6 32GB Space Gray</a></h3>
+						<div class="article__table">
+							<div class="article__tr">
+								<div class="article__td">Wireless Technology</div>
+								<div class="article__td">4G, 4G LTE, LTE</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Operating System</div>
+								<div class="article__td">Apple iOS 9</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Maximum Usage Time</div>
+								<div class="article__td">14 hours</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Internal Memory</div>
+								<div class="article__td">32 gigabytes</div>
+							</div>
+						</div>
+						<a href="#" class="article__more">All specifications</a>
+					</div>
+					<div class="article__price">
+						<div class="article__price-table">
+							<div class="article__price-tr">
+								<div class="article__price-td">From</div>
+								<div class="article__price-td"><span class="article__price-from">$3 299.99</span></div>
+							</div>
+							<div class="article__price-tr">
+								<div class="article__price-td">Stores</div>
+								<div class="article__price-td"><span class="article__price-stores">14</span></div>
+							</div>
+							<div class="article__price-tr">
+								<div class="article__price-td">User score</div>
+								<div class="article__price-td"><span class="article__price-score">4.8</span></div>
+							</div>
+						</div>
+						<button class="article__price-btn">Compare price</button>
+					</div>
+				</article>
+				<article class="article">
+					<div class="article__img-wrap"><a href="#"><img src="./img/5859425_sd@2x.png" alt="" class="article__img"></a></div>
+					<div class="article__content">
+						<h3 class="article__title"><a href="#">Apple iPhone 6 32GB Space Gray</a></h3>
+						<div class="article__table">
+							<div class="article__tr">
+								<div class="article__td">Wireless Technology</div>
+								<div class="article__td">4G, 4G LTE, LTE</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Operating System</div>
+								<div class="article__td">Apple iOS 9</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Maximum Usage Time</div>
+								<div class="article__td">14 hours</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Internal Memory</div>
+								<div class="article__td">32 gigabytes</div>
+							</div>
+						</div>
+						<a href="#" class="article__more">All specifications</a>
+					</div>
+					<div class="article__price">
+						<div class="article__price-table">
+							<div class="article__price-tr">
+								<div class="article__price-td">From</div>
+								<div class="article__price-td"><span class="article__price-from">$3 299.99</span></div>
+							</div>
+							<div class="article__price-tr">
+								<div class="article__price-td">Stores</div>
+								<div class="article__price-td"><span class="article__price-stores">14</span></div>
+							</div>
+							<div class="article__price-tr">
+								<div class="article__price-td">User score</div>
+								<div class="article__price-td"><span class="article__price-score">4.8</span></div>
+							</div>
+						</div>
+						<button class="article__price-btn">Compare price</button>
+					</div>
+				</article>
+				<article class="article">
+					<div class="article__img-wrap"><a href="#"><img src="./img/5859425_sd@2x.png" alt="" class="article__img"></a></div>
+					<div class="article__content">
+						<h3 class="article__title"><a href="#">Apple iPhone 6 32GB Space Gray</a></h3>
+						<div class="article__table">
+							<div class="article__tr">
+								<div class="article__td">Wireless Technology</div>
+								<div class="article__td">4G, 4G LTE, LTE</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Operating System</div>
+								<div class="article__td">Apple iOS 9</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Maximum Usage Time</div>
+								<div class="article__td">14 hours</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Internal Memory</div>
+								<div class="article__td">32 gigabytes</div>
+							</div>
+						</div>
+						<a href="#" class="article__more">All specifications</a>
+					</div>
+					<div class="article__price">
+						<div class="article__price-table">
+							<div class="article__price-tr">
+								<div class="article__price-td">From</div>
+								<div class="article__price-td"><span class="article__price-from">$3 299.99</span></div>
+							</div>
+							<div class="article__price-tr">
+								<div class="article__price-td">Stores</div>
+								<div class="article__price-td"><span class="article__price-stores">14</span></div>
+							</div>
+							<div class="article__price-tr">
+								<div class="article__price-td">User score</div>
+								<div class="article__price-td"><span class="article__price-score">4.8</span></div>
+							</div>
+						</div>
+						<button class="article__price-btn">Compare price</button>
+					</div>
+				</article>
+				<article class="article">
+					<div class="article__img-wrap"><a href="#"><img src="./img/5859425_sd@2x.png" alt="" class="article__img"></a></div>
+					<div class="article__content">
+						<h3 class="article__title"><a href="#">Apple iPhone 6 32GB Space Gray</a></h3>
+						<div class="article__table">
+							<div class="article__tr">
+								<div class="article__td">Wireless Technology</div>
+								<div class="article__td">4G, 4G LTE, LTE</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Operating System</div>
+								<div class="article__td">Apple iOS 9</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Maximum Usage Time</div>
+								<div class="article__td">14 hours</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Internal Memory</div>
+								<div class="article__td">32 gigabytes</div>
+							</div>
+						</div>
+						<a href="#" class="article__more">All specifications</a>
+					</div>
+					<div class="article__price">
+						<div class="article__price-table">
+							<div class="article__price-tr">
+								<div class="article__price-td">From</div>
+								<div class="article__price-td"><span class="article__price-from">$3 299.99</span></div>
+							</div>
+							<div class="article__price-tr">
+								<div class="article__price-td">Stores</div>
+								<div class="article__price-td"><span class="article__price-stores">14</span></div>
+							</div>
+							<div class="article__price-tr">
+								<div class="article__price-td">User score</div>
+								<div class="article__price-td"><span class="article__price-score">4.8</span></div>
+							</div>
+						</div>
+						<button class="article__price-btn">Compare price</button>
+					</div>
+				</article>
+				<article class="article">
+					<div class="article__img-wrap"><a href="#"><img src="./img/5859425_sd@2x.png" alt="" class="article__img"></a></div>
+					<div class="article__content">
+						<h3 class="article__title"><a href="#">Apple iPhone 6 32GB Space Gray</a></h3>
+						<div class="article__table">
+							<div class="article__tr">
+								<div class="article__td">Wireless Technology</div>
+								<div class="article__td">4G, 4G LTE, LTE</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Operating System</div>
+								<div class="article__td">Apple iOS 9</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Maximum Usage Time</div>
+								<div class="article__td">14 hours</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Internal Memory</div>
+								<div class="article__td">32 gigabytes</div>
+							</div>
+						</div>
+						<a href="#" class="article__more">All specifications</a>
+					</div>
+					<div class="article__price">
+						<div class="article__price-table">
+							<div class="article__price-tr">
+								<div class="article__price-td">From</div>
+								<div class="article__price-td"><span class="article__price-from">$3 299.99</span></div>
+							</div>
+							<div class="article__price-tr">
+								<div class="article__price-td">Stores</div>
+								<div class="article__price-td"><span class="article__price-stores">14</span></div>
+							</div>
+							<div class="article__price-tr">
+								<div class="article__price-td">User score</div>
+								<div class="article__price-td"><span class="article__price-score">4.8</span></div>
+							</div>
+						</div>
+						<button class="article__price-btn">Compare price</button>
+					</div>
+				</article>
+				<article class="article">
+					<div class="article__img-wrap"><a href="#"><img src="./img/5859425_sd@2x.png" alt="" class="article__img"></a></div>
+					<div class="article__content">
+						<h3 class="article__title"><a href="#">Apple iPhone 6 32GB Space Gray</a></h3>
+						<div class="article__table">
+							<div class="article__tr">
+								<div class="article__td">Wireless Technology</div>
+								<div class="article__td">4G, 4G LTE, LTE</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Operating System</div>
+								<div class="article__td">Apple iOS 9</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Maximum Usage Time</div>
+								<div class="article__td">14 hours</div>
+							</div>
+							<div class="article__tr">
+								<div class="article__td">Internal Memory</div>
+								<div class="article__td">32 gigabytes</div>
+							</div>
+						</div>
+						<a href="#" class="article__more">All specifications</a>
+					</div>
+					<div class="article__price">
+						<div class="article__price-table">
+							<div class="article__price-tr">
+								<div class="article__price-td">From</div>
+								<div class="article__price-td"><span class="article__price-from">$3 299.99</span></div>
+							</div>
+							<div class="article__price-tr">
+								<div class="article__price-td">Stores</div>
+								<div class="article__price-td"><span class="article__price-stores">14</span></div>
+							</div>
+							<div class="article__price-tr">
+								<div class="article__price-td">User score</div>
+								<div class="article__price-td"><span class="article__price-score">4.8</span></div>
+							</div>
+						</div>
+						<button class="article__price-btn">Compare price</button>
+					</div>
+				</article>
+				
+
+				<div class="more-wrap"><button class="more-wrap__btn">Load more...</button></div>
+			</div>
+		</div>
+	</div>
+   	 
+	<section class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h1 class="about__title">About site</h1>
+					<p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum mi quis sem lacinia, quis condimentum ipsum scelerisque. Ut tincidunt efficitur quam egestas molestie. Etiam lobortis ultrices diam, ut efficitur mi laoreet eget. Mauris in pharetra massa. Donec dapibus ac lorem in sagittis. Integer vestibulum libero id sem interdum, sed dictum felis iaculis. Nullam nec neque quis orci imperdiet fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In tempus, mi et finibus congue, massa sapien malesuada elit, sed dignissim mauris justo non massa. Integer feugiat, turpis vel pulvinar gravida, libero orci maximus urna, vel fringilla dui neque ut nunc. Pellentesque sagittis mattis eros sit amet elementum.
+					</p>
+					<p class="about__text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In tempus, mi et finibus congue, massa sapien malesuada elit, sed dignissim mauris justo non massa. Integer feugiat, turpis vel pulvinar gravida, libero orci maximus urna, vel fringilla dui neque ut nunc. Pellentesque sagittis mattis eros sit amet elementum.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	   	 
+	<footer class="footer">
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="footer__top">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-4 col-lg-3 text-center text-md-left">
+									<a href="#" class="footer__link-logo">
+										<img src="./img/Mobileprices_logo_4.png" srcset="./img/Mobileprices_logo_4@2x.png 2x" alt="Mobile Prices" class="footer__logo">
+									</a>
+								</div>
+								<div class="col-md-8 col-lg-9 align-self-start">
+									<nav class="footer__nav nav">
+										<ul class="footer__menu nav__menu">
+											<li class="footer__item nav__item"><a href="#" class="footer__link nav__link">Top sales</a></li>
+											<li class="footer__item nav__item"><a href="#" class="footer__link nav__link">Best sellers</a></li>
+											<li class="footer__item nav__item"><a href="#" class="footer__link nav__link">Top 10</a></li>
+											<li class="footer__item nav__item"><a href="#" class="footer__link nav__link">Upcoming mobiles</a></li>
+											<li class="footer__item nav__item"><a href="#" class="footer__link nav__link">Bestnews & reviews</a></li>
+											<li class="footer__item nav__item"><a href="#" class="footer__link nav__link">Mobile recharge</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="footer__bottom">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-4 order-2 order-lg-0">
+									<p class="footer__copy">© 2018 Mobileproces.com. All rights reserved.</p>
+								</div>
+								<div class="col-lg-4 order-0 order-lg-1">
+									<ul class="footer__social">
+										<li class="footer__social-item"><a href="#" class="footer__social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li class="footer__social-item"><a href="#" class="footer__social-link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li class="footer__social-item"><a href="#" class="footer__social-link"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+									</ul>
+								</div>
+								<div class="col-lg-4 order-1 order-lg-2 text-center text-lg-right">
+									<a href="#" class="footer__bottom-link">Privacy policy</a>
+									<a href="#" class="footer__bottom-link">Terms and conditions</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	</footer>	 	 	 
+		   
+</body>
+</html>
