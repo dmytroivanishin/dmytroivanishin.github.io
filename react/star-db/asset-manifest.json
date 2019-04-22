@@ -1,14 +1,14 @@
 {
-  "main.css": "./star-db/static/css/main.0b47badf.chunk.css",
-  "main.js": "./star-db/static/js/main.b399bfda.chunk.js",
-  "main.js.map": "./star-db/static/js/main.b399bfda.chunk.js.map",
-  "runtime~main.js": "./star-db/static/js/runtime~main.37c5196e.js",
-  "runtime~main.js.map": "./star-db/static/js/runtime~main.37c5196e.js.map",
-  "static/js/2.78d71bba.chunk.js": "./star-db/static/js/2.78d71bba.chunk.js",
-  "static/js/2.78d71bba.chunk.js.map": "./star-db/static/js/2.78d71bba.chunk.js.map",
-  "index.html": "./star-db/index.html",
-  "precache-manifest.f4f3466883b0ff0943239648cc6a24a0.js": "./star-db/precache-manifest.f4f3466883b0ff0943239648cc6a24a0.js",
-  "service-worker.js": "./star-db/service-worker.js",
-  "static/css/main.0b47badf.chunk.css.map": "./star-db/static/css/main.0b47badf.chunk.css.map",
-  "static/media/error-indicator.png": "./star-db/static/media/error-indicator.00da8937.png"
+  "main.css": "/react/star-db/static/css/main.0b47badf.chunk.css",
+  "main.js": "/react/star-db/static/js/main.b399bfda.chunk.js",
+  "main.js.map": "/react/star-db/static/js/main.b399bfda.chunk.js.map",
+  "runtime~main.js": "/react/star-db/static/js/runtime~main.7a649e8f.js",
+  "runtime~main.js.map": "/react/star-db/static/js/runtime~main.7a649e8f.js.map",
+  "static/js/2.78d71bba.chunk.js": "/react/star-db/static/js/2.78d71bba.chunk.js",
+  "static/js/2.78d71bba.chunk.js.map": "/react/star-db/static/js/2.78d71bba.chunk.js.map",
+  "index.html": "/react/star-db/index.html",
+  "precache-manifest.b6f780a81c552c94247b6a01dbecb396.js": "/react/star-db/precache-manifest.b6f780a81c552c94247b6a01dbecb396.js",
+  "service-worker.js": "/react/star-db/service-worker.js",
+  "static/css/main.0b47badf.chunk.css.map": "/react/star-db/static/css/main.0b47badf.chunk.css.map",
+  "static/media/error-indicator.png": "/react/star-db/static/media/error-indicator.00da8937.png"
 }
