@@ -1,0 +1,11 @@
+<svg version="1.1" id="svg-loading-line" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  
+	 viewBox="0 0 1920 20" >
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="10" x2="1920" y2="10">
+	  <stop  offset="0.08" style="stop-color:#E0CD1E"/>
+	  <stop  offset="0.92" style="stop-color:#1FB9DD"/>
+	</linearGradient>
+	<rect fill="url(#SVGID_1_)" width="1920" height="20" mask="url('#mask-loading-line')" />
+	<mask id="mask-loading-line">
+		<line id="path-loading-line" fill="none" stroke="#FFFFFF" stroke-width="28.3465" stroke-miterlimit="10" x1="0" y1="10.63" x2="1920" y2="10"/>
+	</mask>
+</svg>
