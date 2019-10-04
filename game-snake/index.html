@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake</title>
+</head>
+<body>
+    
+    <div class="game-snake">
+        <h1 class="game-snake__title">Game Snake</h1>
+
+        <canvas id="canvas" width="560px" height="560px"></canvas>
+
+        <audio id="wall">
+            <source src="./sounds/dead.wav">
+        </audio>
+        <audio id="eats">
+            <source src="./sounds/coin.mp3">
+        </audio>
+        
+    </div>
+    
+
+    <script type="text/javascript" src="./js/build.13eaa9c146095c76ab5a.js"></script>
+    <script>
+        var game = new game.GameControl({
+            el: document.getElementById("canvas"),
+            speed: 120,
+            size: 13,
+            /*colors: {
+                background: "#FFFFFF",
+                wall: "#200772",
+                snake: "#FFAA00",
+                eats: "#009999"
+            }*/
+        });
+
+        game.init();
+        game.startGame();
+
+        game.onStart = (msg) => {
+            game.endGame();
+            alert(msg);
+            const startAgain = confirm("Start the game over?");
+            if(startAgain){ 
+                game.startGame(); 
+            }
+        };
+
+    </script>
+</body>
+</html>
