@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/main.css" />
+	<title>Тестовое задание</title>
+</head>
+<body style="overflow: hidden">
+	<div class="preloader">
+		<section>
+		  <div class='sk-folding-cube'>
+			<div class='sk-cube sk-cube-1'></div>
+			<div class='sk-cube sk-cube-2'></div>
+			<div class='sk-cube sk-cube-4'></div>
+			<div class='sk-cube sk-cube-3'></div>
+		  </div>
+		</section>
+	</div>
+	<div class="popup">
+		<div class="popup__window">
+			<span class="popup__close"><i class="fa fa-times"></i></span>
+			<div class="popup__border">
+				<div class="popup__side-1">
+					<h1>Заказать звонок</h1>
+					<form action="" class="popup__form">
+						<div class="popup__form-row">
+							<input type="text" class="popup__form-input" required>
+							<label for="" class="popup__form-label">Имя:*</label>
+						</div>
+						<div class="popup__form-row">
+							<input type="text" class="popup__form-input" required>
+							<label for="" class="popup__form-label">Телефон:*</label>
+						</div>
+						<div class="popup__form-row">
+							<input type="button" class="btn-fill popup__form-btn" value="Отправить">
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="popup__side-2">
+				<img class="popup__background" src="./img/@1x/g1.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<header class="header">
+		<div class="header__timer">
+			<div class="header__timer-slide header__timer-slide--current">01</div>
+			<div class="header__timer-line"></div>
+			<div class="header__timer-slide header__timer-slide--prev">02</div>
+		</div>
+		<div class="header__top">
+			<ul class="header__info">
+				<li class="header__call">
+					<div class="header__icon call">
+						<i class="fa fa-phone"></i>
+					</div>
+					<div class="header__call-info">
+						<a href="tel:8 (800) 77-512-7" class="header__number">8 (800) 77-512-77</a>
+						<span class="btn-text header__order-call call">Заказать звонок</span>
+					</div>
+				</li>
+				<li class="header__lang">
+					<div class="header__icon">
+						ua
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="header__bottom-logo">
+			<svg>
+				<use xlink:href="./img/@svg/sprite.svg#comfort_life"></use>
+			</svg>
+		</div>
+		<div class="header__controls controls">
+			<div class="header__controls-dots controls__dots"></div>
+			<div class="controls__arrows">
+				<div class="header__controls-arrow-left controls__arrow-left">
+					<i class="fa fa-long-arrow-left"></i>
+				</div>
+				<div class="header__controls-arrow-right controls__arrow-right">
+					<i class="fa fa-long-arrow-right"></i>
+				</div>
+			</div>
+		</div>
+		
+		<div class="header-slider-text">
+			<div class="header-slider-text__slide">
+				<div class="header-slider-text__logo">
+					<svg>
+						<use xlink:href="./img/@svg/sprite.svg#club_residence"></use>
+					</svg>
+				</div>
+				<p class="header-slider-text__description">Жилой комплекс КЛАБ РЕЗИДЕНС</p>
+				<h1 class="header-slider-text__header">Квартиры уже <br>в продаже!</h1>
+				<a href="#" class="header-slider-text__btn btn-fill">О КОМПЛЕКСЕ</a>
+				<ul class="header-slider-text__info">
+					<li class="header-slider-text__item">
+						<i class="fa fa-map-marker"></i>
+						Киев, переулок Радистов, 14а
+					</li>
+					<li class="header-slider-text__item">
+						ЛЕСНАЯ
+					</li>
+				</ul>
+			</div>
+			<div class="header-slider-text__slide">
+				<div class="header-slider-text__logo">
+					<svg>
+						<use xlink:href="./img/@svg/sprite.svg#home_club"></use>
+					</svg>
+				</div>
+				<p class="header-slider-text__description">Жилой комплекс КЛУБНЫЙ ДОМ</p>
+				<h1 class="header-slider-text__header">Это две строчки <br>текста на семь слов</h1>
+				<a href="#" class="header-slider-text__btn btn-fill">О КОМПЛЕКСЕ</a>
+				<ul class="header-slider-text__info">
+					<li class="header-slider-text__item">
+						<i class="fa fa-map-marker"></i>
+						Киев, переулок Радистов, 40
+					</li>
+					<li class="header-slider-text__item">
+						ЛЕСНАЯ
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="header__gradient"></div>
+		<div class="header-slider-background">
+			<div class="header-slider-background__slide">
+				<img src="./img/@1x/background_1.jpg" alt="">
+			</div>
+			<div class="header-slider-background__slide">
+				<img src="./img/@1x/background_2.jpg" alt="">
+			</div>
+		</div>
+	</header>	
+
+	<section class="gallery" id="gallery">
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="#gallery" class="nav__link"><span>Галерея</span></a></li>
+				<li class="nav__item"><a href="#plan" class="nav__link"><span>Планировки</span></a></li>
+				<li class="nav__item"><a href="#documents" class="nav__link"><span>Документы</span></a></li>
+				<li class="nav__item"><a href="#contact" class="nav__link"><span>Контакты</span></a></li>
+			</ul>
+			<div class="nav__arrows">
+				<div class="nav__arrows-up"><i class="fa fa-arrow-up"></i></div>
+				<div class="nav__arrows-down"><i class="fa fa-arrow-down"></i></div>
+			</div>
+		</nav>
+		<div class="gallery__main">
+			<div class="gallery__main-slider">
+				<div class="gallery__main-item">
+					<img src="./img/@1x/g1.jpg" alt="">
+				</div>
+				<div class="gallery__main-item">
+					<img src="./img/@1x/g2.jpg" alt="">
+				</div>
+				<div class="gallery__main-item">
+					<img src="./img/@1x/g1.jpg" alt="">
+				</div>
+				<div class="gallery__main-item">
+					<img src="./img/@1x/g2.jpg" alt="">
+				</div>
+				<div class="gallery__main-item">
+					<img src="./img/@1x/g1.jpg" alt="">
+				</div>
+				<div class="gallery__main-item">
+					<img src="./img/@1x/g2.jpg" alt="">
+				</div>
+				<div class="gallery__main-item">
+					<img src="./img/@1x/g1.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="gallery__bottom">
+			<div class="gallery__pagination">
+				<ul class="tabs">
+					<li class="tabs__tab tabs__tab--active">КЛУБНЫЙ ДОМ</li>
+					<li class="tabs__tab">КЛАБ РЕЗИДЕНС</li>
+				</ul>
+				<div class="gallery__controls controls">
+					<div class="gallery__controls-dots controls__dots"></div>
+					<div class="controls__arrows">
+						<div class="gallery__controls-arrow-left controls__arrow-left">
+							<i class="fa fa-long-arrow-left"></i>
+						</div>
+						<div class="gallery__controls-arrow-right controls__arrow-right">
+							<i class="fa fa-long-arrow-right"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<ul class="gallery__slider">
+				<li class="gallery__slider-item"><img src="./img/@1x/g1.jpg" alt=""></li>
+				<li class="gallery__slider-item"><img src="./img/@1x/g2.jpg" alt=""></li>
+				<li class="gallery__slider-item"><img src="./img/@1x/g1.jpg" alt=""></li>
+				<li class="gallery__slider-item"><img src="./img/@1x/g2.jpg" alt=""></li>
+				<li class="gallery__slider-item"><img src="./img/@1x/g1.jpg" alt=""></li>
+				<li class="gallery__slider-item"><img src="./img/@1x/g2.jpg" alt=""></li>
+				<li class="gallery__slider-item"><img src="./img/@1x/g1.jpg" alt=""></li>
+				<li class="gallery__slider-item"><img src="./img/@1x/g2.jpg" alt=""></li>
+			</ul>
+
+		</div>
+
+	</section>
+
+	<div class="wrap" >
+		<section class="plan" id="plan">
+			<h1 class="plan__header">Планировки</h1>
+			<div class="plan__flats">
+				<ul class="tabs plan__flats-tabs">
+					<li class="tabs__tab tabs__tab--active plan__flats-tab plan__flats-tab--active">1кімнатні
+						<ul class="plan__flats-tabs-slick">
+							<li>Item 1</li>
+							<li>Item 2</li>
+							<li>Item 3</li>
+							<li>Item 4</li>
+							<li>Item 5</li>
+							<li>Item 6</li>
+						</ul>
+					</li>
+					<li class="tabs__tab plan__flats-tab">2кімнатні</li>
+					<li class="tabs__tab plan__flats-tab">3кімнатні</li>
+					<li class="tabs__tab plan__flats-tab">3 терасами</li>
+				</ul>
+				<div class="plan__flat">
+					<div class="plan__desing plan__connect-slider">
+						<img src="./img/@1x/flat.png" alt="">
+						<img src="./img/@1x/flat.png" alt="">
+						<img src="./img/@1x/flat.png" alt="">
+						<img src="./img/@1x/flat.png" alt="">
+						<img src="./img/@1x/flat.png" alt="">
+						<img src="./img/@1x/flat.png" alt="">
+					</div>
+					<div class="plan__about">
+						<div class="plan__about-slider plan__connect-slider">
+							<div class="plan__about-info">
+								<h2 class="plan__about-header">Квартира 36.05м2</h2>
+								<div class="plan__about-tabel">
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Будинок</div>
+										<div class="plan__about-coll">15</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Поверх</div>
+										<div class="plan__about-coll">4</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Житлова площа</div>
+										<div class="plan__about-coll">36.05м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Загальна площа</div>
+										<div class="plan__about-coll">36.05м2</div>
+									</div>
+								</div>
+								<div class="plan__about-tabel">
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Спальня</div>
+										<div class="plan__about-coll">14.56м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Кухня</div>
+										<div class="plan__about-coll">17.34м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Передпокій</div>
+										<div class="plan__about-coll">14.56м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Санвузол</div>
+										<div class="plan__about-coll">17.34м24</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="plan__about-info">
+								<h2 class="plan__about-header">Квартира 36.05м2</h2>
+								<div class="plan__about-tabel">
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Будинок</div>
+										<div class="plan__about-coll">15</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Поверх</div>
+										<div class="plan__about-coll">4</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Житлова площа</div>
+										<div class="plan__about-coll">36.05м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Загальна площа</div>
+										<div class="plan__about-coll">36.05м2</div>
+									</div>
+								</div>
+								<div class="plan__about-tabel">
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Спальня</div>
+										<div class="plan__about-coll">14.56м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Кухня</div>
+										<div class="plan__about-coll">17.34м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Передпокій</div>
+										<div class="plan__about-coll">14.56м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Санвузол</div>
+										<div class="plan__about-coll">17.34м24</div>
+									</div>
+								</div>
+							</div>
+							<div class="plan__about-info">
+								<h2 class="plan__about-header">Квартира 36.05м2</h2>
+								<div class="plan__about-tabel">
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Будинок</div>
+										<div class="plan__about-coll">15</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Поверх</div>
+										<div class="plan__about-coll">4</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Житлова площа</div>
+										<div class="plan__about-coll">36.05м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Загальна площа</div>
+										<div class="plan__about-coll">36.05м2</div>
+									</div>
+								</div>
+								<div class="plan__about-tabel">
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Спальня</div>
+										<div class="plan__about-coll">14.56м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Кухня</div>
+										<div class="plan__about-coll">17.34м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Передпокій</div>
+										<div class="plan__about-coll">14.56м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Санвузол</div>
+										<div class="plan__about-coll">17.34м24</div>
+									</div>
+								</div>
+							</div>
+							<div class="plan__about-info">
+								<h2 class="plan__about-header">Квартира 36.05м2</h2>
+								<div class="plan__about-tabel">
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Будинок</div>
+										<div class="plan__about-coll">15</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Поверх</div>
+										<div class="plan__about-coll">4</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Житлова площа</div>
+										<div class="plan__about-coll">36.05м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Загальна площа</div>
+										<div class="plan__about-coll">36.05м2</div>
+									</div>
+								</div>
+								<div class="plan__about-tabel">
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Спальня</div>
+										<div class="plan__about-coll">14.56м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Кухня</div>
+										<div class="plan__about-coll">17.34м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Передпокій</div>
+										<div class="plan__about-coll">14.56м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Санвузол</div>
+										<div class="plan__about-coll">17.34м24</div>
+									</div>
+								</div>
+							</div>
+							<div class="plan__about-info">
+								<h2 class="plan__about-header">Квартира 36.05м2</h2>
+								<div class="plan__about-tabel">
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Будинок</div>
+										<div class="plan__about-coll">15</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Поверх</div>
+										<div class="plan__about-coll">4</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Житлова площа</div>
+										<div class="plan__about-coll">36.05м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Загальна площа</div>
+										<div class="plan__about-coll">36.05м2</div>
+									</div>
+								</div>
+								<div class="plan__about-tabel">
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Спальня</div>
+										<div class="plan__about-coll">14.56м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Кухня</div>
+										<div class="plan__about-coll">17.34м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Передпокій</div>
+										<div class="plan__about-coll">14.56м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Санвузол</div>
+										<div class="plan__about-coll">17.34м24</div>
+									</div>
+								</div>
+							</div>
+							<div class="plan__about-info">
+								<h2 class="plan__about-header">Квартира 36.05м2</h2>
+								<div class="plan__about-tabel">
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Будинок</div>
+										<div class="plan__about-coll">15</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Поверх</div>
+										<div class="plan__about-coll">4</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Житлова площа</div>
+										<div class="plan__about-coll">36.05м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Загальна площа</div>
+										<div class="plan__about-coll">36.05м2</div>
+									</div>
+								</div>
+								<div class="plan__about-tabel">
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Спальня</div>
+										<div class="plan__about-coll">14.56м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Кухня</div>
+										<div class="plan__about-coll">17.34м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Передпокій</div>
+										<div class="plan__about-coll">14.56м2</div>
+									</div>
+									<div class="plan__about-row">
+										<div class="plan__about-coll">Санвузол</div>
+										<div class="plan__about-coll">17.34м24</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="plan__about-contact">
+							<span class="plan__about-contact-text">
+								Свяжитесь с нами, чтобы узнать больше
+							</span>
+							<span class="plan__about-contact-text">
+								Отдел продаж:
+								<span>(044) 555 57 75</span>
+							</span>
+						</div>
+						<span class="btn-text plan__about-order-call call">Заказать звонок</span>
+						<div class="plan__controls controls">
+							<div class="plan__controls-dots controls__dots"></div>
+							<div class="controls__arrows">
+								<div class="plan__controls-arrow-left controls__arrow-left">
+									<i class="fa fa-long-arrow-left"></i>
+								</div>
+								<div class="plan__controls-arrow-right controls__arrow-right">
+									<i class="fa fa-long-arrow-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="documents" id="documents">
+			<h1 class="documents__header">Документы</h1>
+			<div class="documents__descriptions">
+				<p>У нас есть все документы на строительство, <br>ознакомиться с ними вы можете в этом разделе.</p>
+				<p>Или подъехать в отделе продаж: Киевская обл. <br>пгт. Гостомель, ул. Варшавская и переулок Варшавский.</p>
+			</div>
+			<div class="documents__files">
+				<div class="documents__files-item">
+					<div class="documents__files-size">
+						<i class="fa fa-file-pdf-o"></i>
+						<span>18Mb</span>
+					</div>
+					<h3>Разрешение на строительство</h3>
+					<hr>
+					<div class="documents__files-bottom">
+						<div class="documents__files-date">21.05.2019</div>
+						<a href="#" class="documents__files-download"><i class="fa fa-download" ></i></a>
+					</div>
+				</div>
+				<div class="documents__files-item">
+					<div class="documents__files-size">
+						<i class="fa fa-file-pdf-o"></i>
+						<span>18Mb</span>
+					</div>
+					<h3>Разрешение на строительство</h3>
+					<hr>
+					<div class="documents__files-bottom">
+						<div class="documents__files-date">21.05.2019</div>
+						<a href="#" class="documents__files-download"><i class="fa fa-download" ></i></a>
+					</div>
+				</div>
+				<div class="documents__files-item">
+					<div class="documents__files-size">
+						<i class="fa fa-file-pdf-o"></i>
+						<span>18Mb</span>
+					</div>
+					<h3>Разрешение на строительство</h3>
+					<hr>
+					<div class="documents__files-bottom">
+						<div class="documents__files-date">21.05.2019</div>
+						<a href="#" class="documents__files-download"><i class="fa fa-download" ></i></a>
+					</div>
+				</div>
+				<div class="documents__files-item">
+					<div class="documents__files-size">
+						<i class="fa fa-file-pdf-o"></i>
+						<span>18Mb</span>
+					</div>
+					<h3>Разрешение на строительство</h3>
+					<hr>
+					<div class="documents__files-bottom">
+						<div class="documents__files-date">21.05.2019</div>
+						<a href="#" class="documents__files-download"><i class="fa fa-download" ></i></a>
+					</div>
+				</div>
+				<div class="documents__files-item">
+					<div class="documents__files-size">
+						<i class="fa fa-file-pdf-o"></i>
+						<span>18Mb</span>
+					</div>
+					<h3>Разрешение на строительство</h3>
+					<hr>
+					<div class="documents__files-bottom">
+						<div class="documents__files-date">21.05.2019</div>
+						<a href="#" class="documents__files-download"><i class="fa fa-download" ></i></a>
+					</div>
+				</div>
+				<div class="documents__files-item">
+					<div class="documents__files-size">
+						<i class="fa fa-file-pdf-o"></i>
+						<span>18Mb</span>
+					</div>
+					<h3>Разрешение на строительство</h3>
+					<hr>
+					<div class="documents__files-bottom">
+						<div class="documents__files-date">21.05.2019</div>
+						<a href="#" class="documents__files-download"><i class="fa fa-download" ></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="documents__controls controls">
+				<div class="documents__controls-dots controls__dots"></div>
+				<div class="controls__arrows">
+					<div class="documents__controls-arrow-left controls__arrow-left">
+						<i class="fa fa-long-arrow-left"></i>
+					</div>
+					<div class="documents__controls-arrow-right controls__arrow-right">
+						<i class="fa fa-long-arrow-right"></i>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<section class="contact" id="contact">
+		<div class="contact__top">
+			<h1>Офис <br>продаж</h1>
+			<div class="contact__address">
+				<span>Адрес</span>
+				<h2>Киев, переулок Радистов, 16 </h2>
+				<span class="btn-text contact__btn">Открыть в навигаторе</span>
+			</div>
+			<div class="contact__address">
+				<span>Телефон</span>
+				<h2>(044) 555 57 75 <span>ПН-ПТ: 9:00 - 18:00</span></h2>
+				<span class="btn-text contact__btn call">Заказать звонок</span>
+			</div>
+		</div>
+		<div class="contact__find-us">
+			<span><i class="fa fa-envelope-o"></i><span class="btn-text contact__btn call">Написать нам</span></span>
+			<div class="contact__map">
+				<img src="./img/@2x/map.jpg" alt="">
+			</div>
+		</div>
+	</section>
+	
+	<footer class="footer">
+		<svg class="footer__logo-home-club">
+			<use xlink:href="./img/@svg/sprite.svg#home_club"></use>
+		</svg>
+		<span><i class="fa fa-map-marker"></i>Киев, переулок Радистов, 14</span>
+		<span><i class="fa fa-phone"></i>Отдел продаж: (044) 555 56 25</span>
+		<ul class="footer__social">
+			<li class="footer__social-item"><a href="#" class="footer__social-link"><i class="fa fa-facebook-square"></i></a></li>
+			<li class="footer__social-item"><a href="#" class="footer__social-link"><i class="fa fa-instagram"></i></a></li>
+		</ul>
+		<ul class="footer__lang">
+			<li class="footer__lang-item"><a href="#" class="footer__link footer__link--active">UA</a></li>
+			<li class="footer__lang-item"><a href="#" class="footer__link">RU</a></li>
+		</ul>
+		<svg class="footer__logo-smart_orange">
+			<use xlink:href="./img/@svg/sprite.svg#logo_smart_orange"></use>
+		</svg>
+	</footer>
+
+
+	<script src="./js/all.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
