@@ -143,10 +143,12 @@ const drawInfo = (ctx, options) => {
   ctx.fillText(`ctan: ${isInfinity((1 / Math.tan(options.theta)).toFixed(2))}`, options.width / 2 - options.radius - 40, options.height / 100 * 4 + 110);
 }
 
-drawGraph(circleCTX, { ...canvasOpt, ...circleOpt, ...triangleOpt });
-drawCircle(circleCTX, { ...canvasOpt, ...circleOpt, ...triangleOpt });
-drawTriangle(circleCTX, { ...canvasOpt, ...circleOpt, ...triangleOpt });
-drawInfo(circleCTX, { ...canvasOpt, ...circleOpt, ...triangleOpt });
+window.addEventListener('load', () => {
+  drawGraph(circleCTX, { ...canvasOpt, ...circleOpt, ...triangleOpt });
+  drawCircle(circleCTX, { ...canvasOpt, ...circleOpt, ...triangleOpt });
+  drawTriangle(circleCTX, { ...canvasOpt, ...circleOpt, ...triangleOpt });
+  drawInfo(circleCTX, { ...canvasOpt, ...circleOpt, ...triangleOpt });
+});
 
 document.addEventListener('scroll', (e) => {
   const step = (Math.PI * 2) / (document.body.scrollHeight - window.innerHeight);
